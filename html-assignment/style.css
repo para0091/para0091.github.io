@@ -14,6 +14,23 @@ header, footer{
     box-shadow: 0, 0, 2px, 1px, #000;
 }
 
-li {
-    list-style: none;
+.hobbies {
+    list-style-type: square;
 }
+
+.navigation {
+    list-style-type: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    background-color: burlywood;
+    border: cadetblue;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.navigation a:hover {
+    background-color: coral;
+}
+
