@@ -1,0 +1,19 @@
+body {
+    font-size: 18px;
+}
+
+header, footer{
+    background-color: aqua;
+}
+
+.site-title {
+    color:blueviolet;
+}
+
+#my-image {
+    box-shadow: 0, 0, 2px, 1px, #000;
+}
+
+li {
+    list-style: none;
+}
