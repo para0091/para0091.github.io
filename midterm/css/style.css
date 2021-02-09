@@ -1,3 +1,102 @@
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #aad4cf;
+}
+
+main {
+    width: 60%;
+    margin: auto;
+    background-color: #d4e9e7;
+}
+
+section {
+    margin: 10px;
+}
+
+#head-img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+nav {
+    background-color: #d4e9e7;
+    margin: auto;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 150px;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.img-desc {
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
+.small-img {
+    width: 300px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+li {
+    font-size: 12px;
+    list-style-type: square;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.contact-form {
+    border-style: solid;
+    border-width: 2px;
+    padding: 16px;
+}
+
+.contact-form div {
+    padding: 10px;
+}
+
+input {
+    border: .5px solid gray;
+    margin-top: 10px;
+}
+
+#yourname, #email, #message{
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    height: 80px;
+    margin-top: 10px;  
+}
+
+button {
+    font-size: 12px;
+    padding: 10px;
+    margin-top: 12px;
+}
+
+footer {
+    float: right;
+    font-size: 12px;
 }
