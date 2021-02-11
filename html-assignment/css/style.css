@@ -1,0 +1,44 @@
+body {
+    font-size: 18px;
+}
+
+header, footer{
+    background-color: aqua;
+}
+
+.site-title {
+    color:blueviolet;
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+.hobbies {
+    list-style-type: square;
+}
+
+.hobbies li:nth-child(odd) {
+    background-color: cadetblue;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: burlywood;
+    border: cadetblue;
+    border-style: solid;
+    border-width: 2px;
+}
+
+nav a:hover {
+    background-color: coral;
+}
+
+nav a:focus {
+    background-color: chocolate;
+}
+
