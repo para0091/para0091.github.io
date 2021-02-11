@@ -29,9 +29,7 @@ nav ul {
 nav a {
     text-decoration: none;
     background-color: burlywood;
-    border: cadetblue;
-    border-style: solid;
-    border-width: 2px;
+    border: 2px solid cadetblue;
 }
 
 nav a:hover {
