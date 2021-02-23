@@ -57,34 +57,35 @@ body {
 }
 
 main {
-    max-width: 1025px;
-    margin: auto;
+    max-width: 1000px;
+    margin: 0 auto;
     background-color: #d4e9e7;
 }
 
-article {
-    margin: 16px;
-    padding-bottom: 16px;
+h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 26%;
+    font-size: 56px;
+    color: white;
+    font-weight: 600;
 }
 
 #head-img {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    width: 1000px;
 }
 
 nav {
-    margin: auto;
-    padding: 10px 0 10px 0;
-}
-
-.nav-links {
-    display: flex;
+    padding: 16px 0 16px 0;
 }
 
 .nav-links li {
-    flex: 1;
+    display: inline-block;
+    width: 32.9%;
     text-align: center;
-    border: none;
     border-right: 1px solid black;
     font-size: 24px;
 }
@@ -93,13 +94,10 @@ nav {
     border: none;
 }
 
-h1 {
-    color: #fff;
-    text-align: center;
-    position: relative;
-    bottom: 150px;
-    font-size: 48px;
-    font-weight: 400;
+
+article {
+    margin: 16px 16px 0 16px;
+    padding-bottom: 16px;
 }
 
 .img-desc {
@@ -113,14 +111,21 @@ h1 {
 }
 
 p {
-    font-weight: medium;
+    font-weight: normal;
     line-height: 1.5;
 }
 
 h2 {
     font-size: 36px;
     font-weight: bold;
-    margin: 24px 0 0 0;
+    margin: 32px 0 0 0;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 500;
+    padding-left: 0px;
+    margin: 32px 0 16px 0;
 }
 
 .facts {
@@ -128,13 +133,6 @@ h2 {
     line-height: 1.5;
     list-style-type: disc;
     margin: 10px 0 0 16px;
-}
-
-h3 {
-    font-size: 24px;
-    font-weight: 500;
-    padding-left: 0px;
-    margin: 16px 0 16px 0;
 }
 
 .contact-form {
@@ -153,7 +151,7 @@ input {
 }
 
 label {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #yourname, #email, #message{
@@ -180,6 +178,7 @@ button {
 }
 
 footer {
+    text-align: right;
     font-size: 14px;
-    margin: 16px 0 16px 0;
+    padding: 1em 2em 2em 1em;
 }
