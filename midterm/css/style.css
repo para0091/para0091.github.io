@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,20 +42,26 @@ table {
 	border-spacing: 0;
 }
 
-/* -------------------------------- 
-Midterm Styles
---------------------------------- */
+/* -------------  Midterm Styles ------------- */
+
+/* Setting a global font family */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     background-color: #aad4cf;
 }
+
+/* Formatting the main section of the page */
 
 main {
     max-width: 1000px;
     margin: 0 auto;
-    background-color: #d4e9e7;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 16px;
 }
+
+/* Placing the heading on the image */
 
 h1 {
     position: absolute;
@@ -68,7 +69,7 @@ h1 {
     right: 0;
     text-align: center;
     top: 26%;
-    font-size: 56px;
+    font-size: 3.5rem;
     color: white;
     font-weight: 600;
 }
@@ -82,18 +83,21 @@ nav {
     padding: 16px 0 16px 0;
 }
 
+/* To display the links in the same line */
+
 .nav-links li {
     display: inline-block;
     width: 32.9%;
     text-align: center;
-    border-right: 1px solid black;
-    font-size: 24px;
+    border-right: 2px solid black;
+    font-size: 1.5rem;
 }
 
 .nav-links li:last-child {
     border: none;
 }
 
+/* Setting aside some breathing room for the content */
 
 article {
     margin: 16px 16px 0 16px;
@@ -104,9 +108,11 @@ article {
     margin: 10px 20px 0 0;
 }
 
+/* Wrapping the text around the image */
+
 .small-img {
     width: 300px;
-    float: left;
+    float: left; 
     margin: 0 20px 20px 0;
 }
 
@@ -116,24 +122,28 @@ p {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: bold;
     margin: 32px 0 0 0;
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 500;
     padding-left: 0px;
     margin: 32px 0 16px 0;
 }
 
+/* Formatting the Facts section */
+
 .facts {
-    font-size: 14px;
+    font-size: .8rem;
     line-height: 1.5;
     list-style-type: disc;
     margin: 10px 0 0 16px;
 }
+
+/* Formatting the contact form */
 
 .contact-form {
     border-style: solid;
@@ -148,10 +158,6 @@ h3 {
 input {
     border: .5px solid gray;
     margin-top: 10px;
-}
-
-label {
-    font-size: 16px;
 }
 
 #yourname, #email, #message{
@@ -172,13 +178,15 @@ h4 {
 }
 
 button {
-    font-size: 12px;
+    font-size: .75rem;
     padding: 10px;
     margin: 12px 0 0 8px;
 }
 
+/* Aligning the footer to the right */
+
 footer {
     text-align: right;
-    font-size: 14px;
+    font-size: .8rem;
     padding: 1em 2em 2em 1em;
 }
