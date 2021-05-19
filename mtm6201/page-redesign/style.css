@@ -1,3 +1,5 @@
+/* Importing Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 
@@ -11,7 +13,7 @@ html {
 
 p {
     font-family: 'Noto-Sans', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     line-height: 1.5;
 }
 
@@ -20,11 +22,11 @@ a {
     color: #006d77;
 }
 
-/* Mobile Navigation */
+/*---------------- Mobile Screen Styles --------------*/
 
 /* Setting the navigation as single blocks */
 
-#nav.nav {
+nav#nav {                       /* Specificity 0101 */
     display: block;
     width: 100%;
     padding: 4px 0;
@@ -32,68 +34,67 @@ a {
     background-color: #edf6f9;
 }
 
-#nav a {
+nav.nav .nav-link {             /* Specificity 0021 */
     display: block;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 1rem 0;
     border-bottom: 1px solid #83c5be;
+    transition-duration: 250ms;
 }
 
-#nav a:hover {
+nav.nav .nav-link:hover {
     background-color: #83c5be;
-    border-radius: 8px;
+    border-radius: 4px;
     border-bottom: none;
 }
 
-h1.page-title {
+h1.page-title {             /* Specificity 0011 */
     font-family: 'Rubik', sans-serif;
     font-size: 5rem;
     color: #006d77;
+    margin: 24px;
 }
 
 /* Resizing the spacing around title section */
 
-section#home {
-    padding: 4rem;
+section#home {              /* Specificity 0101 to overwrite #home*/
+    padding: 5rem;
     background-color: #edf6f9;
-}
-
-section .page-title {
-    margin: 24px;
 }
 
 /* About Section */
 
 /* Resizing the spacing around about section, and changing the background color */
 
-#about.about {
+section#about {             /* Specificity 0101 to overwrite #about*/
     padding: 3rem 0;
     background-color: #006d77;
+    color: white;
 }
 
-.about .section-title {
+section .section-title {
     font-family: 'Rubik', sans-serif;
-    color: white;
 }
 
-.about p {
-    color: white;
-    display: block;
-    padding: 1.5rem;
-}
+/* Removing the float of image */
 
-.about .about-image {
+section .about-image {      /* Specificity 0011 */
     float: none;
     display: block;
     margin: 0 auto;
+}
+
+.about p {
+    display: block;
+    padding: 1.5rem;
 }
 
 /* Contact Section */
 
 /* Resizing the spacing around contact section */
 
-section#contact {   /* Specificity 101 */
+section#contact {           /* Specificity 0101 to overwrite #contact */
     padding: 2rem 1rem 2rem;
     background-color: #edf6f9;
 }
@@ -105,7 +106,7 @@ section#contact {   /* Specificity 101 */
 
 /* Keeping the contact form inside the viewport */
 
-.contact .contact-form {
+section .contact-form {
     width: 100%;
     padding: 1.5rem;
     margin-top: 1.5rem;
@@ -113,26 +114,28 @@ section#contact {   /* Specificity 101 */
     border-radius: 8px;
 }
 
-.contact-form label {
+form label {
     font-family: 'Noto-Sans', sans-serif;
     font-size: 1.15rem;
 }
 
-.contact-form input, textarea {
+section .contact-form-input {
     width: 100%;
     margin: .5rem 0 1rem;
     border: 1px solid #aaa;
     border-radius: 4px;
+    padding: 1rem;
+    font-size: 1.15rem;
 }
 
-.contact-form textarea {
+form textarea {
     resize: none;
     height: 8rem;
 }
 
 /* Editing and formatting the contact form button */
 
-.contact-form button {
+button {
     padding: 1rem;
     width: 100%;
     background-color: #83c5be;
@@ -143,13 +146,9 @@ section#contact {   /* Specificity 101 */
     transition-duration: 300ms;
 }
 
-.contact-form button:hover {
+button:hover {
     background-color: #006d77;
     color: white;
-}
-
-.contact-form button:focus {
-    border: 1px solid #006d77;
 }
 
 /* Footer section */
@@ -168,11 +167,14 @@ footer p {
     margin-right: .25rem;
 }
 
-/* Changing the tablet styles */
+/* ----------------------------------------------------------------- */
+
+
+/*----------------- Changing the tablet styles ----------------------*/
 
 @media screen and (min-width:760px) {
     
-    /* Clearfixing the float given to the image */
+    /* Clearfixing the float applied to the image */
 
     .about {
         content: "";
@@ -184,7 +186,9 @@ footer p {
         margin: 1rem;
     }
 
-    .about .about-image {
+    /* Floating the image */
+
+    section .about-image {
         float: left;
         display: block;
         margin: 0 auto;
@@ -197,35 +201,41 @@ footer p {
     
 }
 
+/* ----------------------------------------------------------------- */
+
+
+/*----------------- Changing the Desktop styles ---------------------*/
+
 @media screen and (min-width:1080px) {
     
+    /* Keeping the navigation inside 1200px */
+
     #nav.nav {
         max-width: 1200px;
         text-align: right;
-        padding: 3rem 2rem;
+        padding: 3rem 4rem;
     }
 
-    #nav a {
+    nav.nav .nav-link {
         display: inline;
         border-bottom: none;
         margin-right: 0.25rem;
-        padding: 1rem; 
-        font-weight: 400;
-        font-size: 1.25rem;
-        transition-duration: 300ms;
-    }
-
-    #nav a:hover {
-        background-color: #83c5be;
-        border-radius: 8px;
+        padding: 1rem;
+        border-radius: 4px;
     }
 
     section#home {
         padding: 120px 40px;
     }
 
-    .home p {
+    .home p {           /* Selecting the p child instead of parent with same specificity */
         padding: 1rem 6rem;
+    }
+
+    /* Clearfixing the float given to image */
+
+    section#about {
+        padding: 60px 0;
     }
 
     .about {
@@ -234,21 +244,21 @@ footer p {
         display: table;
     }
 
-    .about .about-image {
-        margin: 0 40px 0 80px;
+    /* Adjusting the spacing for about and contact sections */
+
+    section .about-image {
+        margin: 0 2.5rem 0 4rem;
     }
 
     .about p {
-        padding-top: 36px;
-    }
-
-    #about.about {
-        padding: 60px 0;
+        padding: 2rem 4rem 0 0;
     }
 
     section#contact {
         padding: 4rem;
     }
+
+    /* Applying a grid system to the contact section */
 
     .contact {
         display: grid;
@@ -264,13 +274,25 @@ footer p {
         grid-column: 3 / 4;
     }
 
-    .contact .contact-form {
+    /* Applying a transition duration for a slight hover animation */
+
+    section .contact-form {
         grid-column: 1 / 3;
         grid-row: 2 / 3;
+        box-shadow: 4px 8px 24px 16px rgba(0, 109, 119, 0.05);
+        transition-duration: 300ms;
     }
 
-    .contact-form label {
+    .contact .contact-form:hover {
+        box-shadow: none;
+    }
+
+    form label {
         font-size: 1.15rem;
+    }
+
+    footer {
+        padding: 2rem 4rem;
     }
 
 }
