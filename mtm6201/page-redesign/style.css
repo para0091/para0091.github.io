@@ -60,7 +60,7 @@ h1.page-title {             /* Specificity 0011 */
 
 /* Resizing the spacing around title section */
 
-section#home {              /* Specificity 0101 to overwrite #home*/
+section#home {              /* Specificity 0101 to override #home*/
     padding: 5rem;
     background-color: #edf6f9;
 }
@@ -69,7 +69,7 @@ section#home {              /* Specificity 0101 to overwrite #home*/
 
 /* Resizing the spacing around about section, and changing the background color */
 
-section#about {             /* Specificity 0101 to overwrite #about*/
+section#about {             /* Specificity 0101 to override #about*/
     padding: 3rem 0;
     background-color: #006d77;
     color: white;
@@ -96,7 +96,7 @@ section .about-image {      /* Specificity 0011 */
 
 /* Resizing the spacing around contact section */
 
-section#contact {           /* Specificity 0101 to overwrite #contact */
+section#contact {           /* Specificity 0101 to override #contact */
     padding: 2rem 1rem 2rem;
     background-color: #edf6f9;
 }
