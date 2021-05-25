@@ -1,25 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <header>
-        <img src="/images/logo/logo.svg" alt="">
+    <header class="container">
+        <img src="/images/logo/logo.png" alt="">
     </header>
-    <main class="container">
-        <section class="landing">
+    <main>
+        <section class="landing container">
             <div class="left-head">
                 <h1>Want to be your own boss?</h1>
                 <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
             </div>
             <div>
-                <img src="/images/bg-image/scooter.svg" alt="">
+                <img src="/images/bg-image/scooter.svg" alt="scooter">
+            </div>
+            <div class="contact">
+                <h2>Apply Now</h2>
+                <p>Enter your info below to get started.</p>
+                <form action="apply">
+                    <div>
+                        <label for="fname" id="fname"></label>
+                        <input type="text" name="fname" id="fname" placeholder="First Name">
+                    </div>
+                    <div>
+                        <label for="lname" id="lname"></label>
+                        <input type="text" name="lname" id="lname" placeholder="Last Name">
+                    </div>
+                    <div>
+                        <label for="email" id="email"></label>
+                        <input type="text" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="number" id="number"></label>
+                        <input type="text" name="number" id="number" placeholder="Phone Number">
+                    </div>
+                    <div class="check-terms">
+                        <input type="checkbox" name="terms" id="terms">
+                        <span>I agree to Dash terms</span>
+                    </div>
+                    <button type="submit">Drive With Us</button>
+                    <p>Already applied? <a href="#">Check your application status here</a></p>
+                </form>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer-content container">
+            <h3>See how much you can earn with Dash.</h3>
+            <p>How many hours do you want to drive with us this week?</p>
+            <form action="hrs">
+                <div class="footer-form">
+                    <div>
+                        <label for="hours" id="hours"></label>
+                        <input type="number" name="hours" id="hours" placeholder="Hours">
+                    </div>
+                    <div>
+                        <label for="city" id="city"></label>
+                        <input type="text" name="city" id="city" placeholder="City">
+                    </div>
+                    <div>
+                        <button type="submit">Calculate</button>
+                    </div>
+                    <div class="social-icons">
+                        <a href="www.instagram.com" target="_blank"><img src="/images/icons/instagram.svg" alt="instagram"></a>
+                        <a href="www.twitter.com" target="_blank"><img src="/images/icons/twitter.svg" alt="twitter"></a>
+                        <a href="www.facebook.com" target="_blank"><img src="/images/icons/facebook.svg" alt="facebook"></a>
+                        <a href="www.linkedin.com" target="_blank"><img src="/images/icons/linkedin.svg" alt="linkedin"></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </footer>
 </body>
+
 </html>
