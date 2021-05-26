@@ -167,6 +167,11 @@ section > div {
     width: 100%;
     border: none;
     border-radius: 8px;
+    transition-duration: 200ms;
+}
+
+.contact button:hover {
+    box-shadow: 4px 4px 24px 8px rgba(33, 165, 106, 0.2);
 }
 
 .contact a {
@@ -221,6 +226,10 @@ footer h3, p {
     border: none;
     border-radius: 8px;
     margin: 1rem 0;
+}
+
+.footer button:hover {
+    box-shadow: 4px 4px 24px 8px rgba(156, 40, 36, 0.1);
 }
 
 .footer-form div:nth-child(4) {
