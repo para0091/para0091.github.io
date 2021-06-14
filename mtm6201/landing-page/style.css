@@ -225,7 +225,7 @@ Also aligning the text to the center of the checkbox */
 
 footer {
     background-color: #fffd8c;
-    padding: 2rem;
+    padding: 2rem 3rem;
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
