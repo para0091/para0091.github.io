@@ -76,7 +76,7 @@ body {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3.75rem;
     font-weight: 700;
 }
 
@@ -85,7 +85,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
 }
 
 p {
@@ -120,7 +120,7 @@ section>div {       /* Applying a margin to the direct children of the main sect
 
 .left-head p {
     margin: 1rem 0;
-    line-height: 1.5;
+    line-height: 1.2;
 }
 
 /* Contact Section */
@@ -129,9 +129,9 @@ section>div {       /* Applying a margin to the direct children of the main sect
 
 .contact {
     padding: 2rem;
-    margin: 3rem 2rem;
-    box-shadow: 4px 0px 64px 32px rgba(66, 66, 66, 0.08);
-    border-radius: 16px;
+    margin: 2rem 1rem 3rem;
+    box-shadow: 5px 10px 15px rgba(51, 49, 49, 0.4);
+    border-radius: 26px;
     background-color: white;
 }
 
@@ -141,6 +141,29 @@ section>div {       /* Applying a margin to the direct children of the main sect
 
 .contact p {
     margin: 1rem 0;
+}
+
+.start {
+    display: none;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Selecting nth-child to match the form exactly as in mockup */
+
+.contact form div:nth-child(1) {
+    order: -3;
+}
+
+.contact form div:nth-child(2) {
+    order: -2;
+}
+
+.contact form div:nth-child(4) {
+    order: -1;
 }
 
 .contact form p {
@@ -154,17 +177,19 @@ section>div {       /* Applying a margin to the direct children of the main sect
     padding: 1rem;
     width: 100%;
     display: block;
-    border-radius: 8px;
+    border-radius: 11px;
     margin: 0.5rem 0;
     border: none;
-    background-color: #eee;
+    background-color: #F4F4F5;
     font-family: "Montserrat", "sans-serif";
+    font-size: 1rem;
 }
 
 #terms {        /* Selecting the checkbox for terms and conditions using the id applied */
     margin: 1rem 1rem 1rem 0;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
 }
 
 /* Using flex to keep the agreement text alongside the checkbox
@@ -179,12 +204,12 @@ Also aligning the text to the center of the checkbox */
 
 .contact button {
     font-weight: bold;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     background-color: #57eeab;
     padding: 1rem;
     width: 100%;
     border: none;
-    border-radius: 8px;
+    border-radius: 11px;
     transition-duration: 200ms;
 }
 
@@ -202,6 +227,9 @@ footer {
     background-color: #fffd8c;
     padding: 2rem;
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 footer h3,
@@ -213,6 +241,11 @@ p {
     font-weight: 700;
 }
 
+.footer p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 /* Using flex for the form in the footer, to keep the City and Hours inputs inline */
 
 .footer-form {
@@ -221,16 +254,21 @@ p {
     justify-content: center;
 }
 
-
 .footer-form input {
-    padding: 1rem;
-    border-radius: 8px;
+    padding: 0.9rem;
+    border-radius: 11px;
     border: none;
     width: 100%;
+    font-size: 1rem;
 }
 
-.footer-form div {
-    flex-basis: calc(50% - 1rem);       /* Using the calc() function to keep both the inputs inline, by keeping the margin intact */ 
+.footer-form div:nth-child(1) {
+    flex-basis: calc(30% - 1rem);
+    margin: 0 1rem 0 0;
+}
+
+.footer-form div:nth-child(2) {
+    flex-basis: calc(70% - 1rem);
     margin: 0 1rem 0 0;
 }
 
@@ -242,13 +280,13 @@ p {
 
 .footer button {
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     background-color: #ff8480;
     color: white;
-    padding: 0.75rem;
+    padding: 0.5rem 1rem;
     width: 100%;
     border: none;
-    border-radius: 8px;
+    border-radius: 11px;
     margin: 1rem 0;
 }
 
@@ -256,32 +294,54 @@ p {
     box-shadow: 4px 4px 24px 8px rgba(156, 40, 36, 0.1);
 }
 
-.footer-form div:nth-child(4) {         /* Keeping the social media icons in a single line below the form */
+/* .footer-form div:nth-child(4) {         Keeping the social media icons in a single line below the form
     margin: 1rem 0;
     flex-basis: auto;
+} */
+
+.social-icons {
+    margin-top: 1rem;
 }
 
 .social-icons a {
-    margin: 0.5rem;
+    margin: 1rem 1.5rem;
+}
+
+/* Making the Facebook icon round */
+
+.social-icons .fb {
+    border-radius: 50%;
 }
 
 /*---------- Tablet Styles ----------*/
 
 @media screen and (min-width: 640px) {
 
-    h1 {
-        font-size: 5rem;
-    }
-
     main img {
         margin-top: -3rem;
+    }
+
+    .contact {
+        margin: 0 3rem 4rem;
+    }
+
+    .contact form div:nth-child(3) {
+        order: -1;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+
+    .footer-content {
+        flex-basis: 100%;
     }
 
     /* Aligning all the items in the footer-form to the center */
 
     .footer-form {
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     /* Setting different widths for the hours and city forms in the tablet version */
@@ -304,10 +364,6 @@ p {
 
 @media screen and (min-width: 1080px) {
 
-    h1 {
-        font-size: 4rem;
-    }
-
     /* Applying a grid to the main section of the landing page */
 
     .landing {
@@ -320,7 +376,7 @@ p {
     /* Keeping the image behind both elements in the grid by setting a negative margin and sending it back using z-index */
 
     .landing img {
-        max-width: 700px;
+        max-width: 800px;
         z-index: -1;        
         margin: 0 -10rem;       
     }
@@ -328,18 +384,30 @@ p {
     /* Contact */
 
     .contact {
-        margin: 0px 3rem 2rem 0px;
+        margin: 0 3rem 2rem 0;
     }
 
+    .desc-dot {
+        display: none;
+    }
+
+    .start {
+        display: inline;
+    }
 
     /* Footer */
 
-    footer p {
-        margin: 0.5rem 0;
+    footer {
+        align-items: center;
+        flex-wrap: nowrap;
     }
 
-    .footer-content>* {
-        padding: 0 3rem;
+    .footer-content {
+        flex-basis: 67%; /* Fixing the spacing in desktop version */
+    }
+
+    footer p {
+        margin: 0.5rem 0;
     }
 
     .footer-form {
@@ -355,18 +423,22 @@ p {
         flex-basis: auto;
     }
 
-    /* Pushing the social media icons to the right */
-
-    .footer-form div:nth-child(3) {
-        margin-right: auto;
-    }
-
-    .footer-form div:nth-child(4) {
-        align-self: center;
+    .social-icons {
+        margin-top: none;
+        display: flex;
     }
     
-    .social-icons a {
-        margin: 1rem;
+    .social-icons a:nth-child(1) {
+        order: 1;
+    }
+
+    .social-icons a:nth-child(4) {
+        margin: 1rem 0 1rem 1rem;
+        order: 2;
+    }
+
+    .social-icons .fb {
+        border-radius: initial;
     }
 
 }
