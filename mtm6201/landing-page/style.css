@@ -156,15 +156,15 @@ section>div {       /* Applying a margin to the direct children of the main sect
 
 /* Selecting nth-child to match the form exactly as in mockup */
 
-.contact form input:nth-child(1) {
+.contact form div:nth-child(1) {
     order: -3;
 }
 
-.contact form input:nth-child(2) {
+.contact form div:nth-child(2) {
     order: -2;
 }
 
-.contact form input:nth-child(4) {
+.contact form div:nth-child(4) {
     order: -1;
 }
 
@@ -173,6 +173,10 @@ section>div {       /* Applying a margin to the direct children of the main sect
     line-height: 1.5;
     margin: 0.75rem auto;
     text-align: center;
+}
+
+.contact label {
+    display: none;
 }
 
 .contact input {
@@ -322,7 +326,7 @@ p {
         margin: 0 3rem 4rem;
     }
 
-    .contact form input:nth-child(3) {
+    .contact form div:nth-child(3) {
         order: -1;
     }
 
