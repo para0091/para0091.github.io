@@ -427,7 +427,7 @@ p {
     }
 
     .social-icons {
-        margin-top: none;
+        margin-top: 0;
         display: flex;
     }
     
