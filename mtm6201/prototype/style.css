@@ -1,0 +1,640 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Prototype Styles */
+
+html {
+    font-size: 16px;
+    font-family: "Metropolis", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333131;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+header {
+    box-shadow: 5px 10px 15px rgba(186, 186, 186, 0.12);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-img img {
+    max-width: 50%;
+}
+
+.nav-list-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-item a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+}
+
+li.active {
+    background-color: #285C47;
+    color: #ffffff;
+}   
+
+.nav-button a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color: #49B77E;
+}
+
+.nav-button img {
+    margin-right: 8px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.products {
+    margin: 3rem 1.5rem;
+    position: relative;
+}
+
+.popular-products {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.popular-item {
+    padding: 0.75rem;
+    border: 0.5px solid #77CABA;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.popular-item p {
+    margin: 10px 0;
+}
+
+.popular-caption {
+    display: none;
+}
+
+.popular-item a {
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #49B77E;
+    display: block;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+}
+
+.more-btn {
+    flex-grow: 2;
+    border-radius: 8px;
+    border: 1px solid #49B77E;
+    text-decoration: none;
+    color: #49B77E;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: "Bungee", sans-serif;
+    font-size: 3rem;
+    color: #285C47;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+}
+
+h3 {
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #0E4C33;
+    color: #ffffff;
+    padding: 1.5rem;
+}
+
+.footer-copy {
+    margin: 0.5rem;
+}
+
+.footer-copy p {
+    margin: 0.5rem;
+}
+
+.social-icons {
+    margin: 0 auto;
+}
+
+.social-icons a {
+    margin: 0 1rem;
+}
+
+/* Contact Page */
+
+.contact-head {
+    margin: 60px 0;
+}
+
+form {
+    margin: 1rem;
+    border: 1px solid #49B77E;
+    border-radius: 8px;
+    padding: 1.5rem 1.5rem 1rem;
+}
+
+form input, textarea {
+    background-color: #F5F5F5;
+    border-radius: 4px;
+    border: 1px solid #cacaca;
+    padding: 0.5rem;
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    resize: none;
+}
+
+form div {
+    margin-bottom: 1rem;
+}
+
+form button {
+    background-color: #49B77E;
+    color: #ffffff;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-family: "Metropolis", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.map {
+    margin: 2.5rem 1rem;
+}
+
+iframe {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.address, .mailaddress, .phone {
+    background-color: #F5F5F5;
+    padding: 1.5rem;
+    margin: 1rem 1rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #77CABA;
+}
+
+.info-boxes p {
+    margin-top: 0.5rem;
+}
+
+.phone {
+    margin-bottom: 4rem;
+}
+
+
+/* About Page */
+
+.about {
+    margin: 60px 0 40px;
+}
+    
+.about-description {
+    margin: 0 2rem 2rem;
+    line-height: 1.75;
+    text-align: center;
+}
+
+.about-h3 {
+    font-family: "Bungee", sans-serif;
+    font-size: 2rem;
+    color: #285C47;
+    text-align: center;
+    margin: 1rem;
+}
+
+.mission-vision {
+    margin-top: 4rem;
+}
+
+.mission, .vision {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #77CABA;
+    border-radius: 8px;
+}
+
+.mission-vision p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 1rem;
+}
+
+.more-details {
+    margin: 4rem 1rem;
+}
+
+.more-details img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.more-details p {
+    margin: 1rem;
+    line-height: 1.5;
+}
+
+.inspiration {
+    margin-top: 2.5rem;
+}
+
+
+/* Tablet Styles */
+
+@media screen and (min-width: 768px) {
+
+    /* Home Page */
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    /* About Page */
+
+    .mission-vision {
+        display: flex;
+    }
+
+    .story, .inspiration {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .story h3, .inspiration h3 {
+        order: 1;
+    }
+
+    .story p, .inspiration p {
+        order: 2;
+    }
+
+    /* Contact Page */
+
+    .info-boxes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .phone {
+        margin-bottom: 2rem;
+    }
+
+}    
+
+@media screen and (min-width: 1080px) {
+
+    .container {
+        margin: 0 6rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 16px 100px;
+        align-items: center;
+        font-size: 1.125rem;
+    }
+    
+    .nav-img {
+        flex-basis: 10%;
+    }
+    
+    .nav-img img {
+        max-width: 100%;
+    }
+    
+    .nav-list {
+        flex-basis: 80%;
+    }
+    
+    .nav-list-items {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .nav-item {
+        margin: 0 2em;
+        font-weight: bold;
+    }
+
+    .nav-item a:hover {
+        background-color: #49B77E;
+        color: #ffffff;
+    }
+
+    li.active {
+        border-radius: 8px;
+    }
+
+    .nav-button a:hover {
+        background-color: #285C47;
+    }
+
+    .products {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        position: relative;
+    }
+
+    .popular-item {
+        text-align: left;
+    }
+
+    .popular-caption {
+        display: block;
+    }
+
+    .popular-products {
+        display: grid;
+        grid-template-areas:
+        "pone ptwo pthree"
+        "pfour pfive psix"
+        ". button .";
+        justify-content: stretch;
+        grid-column-gap: 4rem;
+    }
+
+    .popular-item:nth-child(1) {
+        grid-area: pone;
+    }
+    
+    .popular-item:nth-child(2) {
+        grid-area: ptwo;
+    }
+    
+    .popular-item:nth-child(3) {
+        grid-area: pthree;
+    }
+    
+    .popular-item:nth-child(4) {
+        grid-area: pfour;
+    }
+    
+    .popular-item:nth-child(5) {
+        grid-area: pfive;
+    }
+    
+    .popular-item:nth-child(6) {
+        grid-area: psix;
+    }
+
+    .more-btn {
+        grid-area: button;
+    }
+    
+    h3 {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    
+    .popular-item a:hover {
+        background-color: #0E4C33;
+    }
+
+    /* Contact Page */
+
+    .contact-head {
+        margin: 4rem 4rem 3rem;
+    }
+
+    .contact {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .contact div, form {
+        flex-basis: 50%;
+    }
+
+    .map {
+        margin: 1rem;
+    }
+    
+    .info-boxes div {
+        padding: 2.5rem;
+    }
+
+    .info-boxes p {
+        margin-top: 1rem;
+    }
+
+    .contact-form {
+        display: grid;
+        grid-template-areas: 
+        "fname mnumber"
+        "email email"
+        "message message"
+        "button button";
+        grid-column-gap: 1rem;
+    }
+
+    .contact-form div:nth-child(1) {
+        grid-area: fname;
+    }
+
+    .contact-form div:nth-child(2) {
+        grid-area: mnumber;
+    }
+
+    .contact-form div:nth-child(3) {
+        grid-area: email;
+    }
+
+    .contact-form div:nth-child(4) {
+        grid-area: message;
+    }
+
+    .contact-form button {
+        grid-area: button;
+    }
+
+
+    /* About Page */
+
+
+    .about {
+        margin: 4rem 4rem 3rem;
+    }
+
+    .about-h3 {
+        font-size: 2.5rem;
+    }
+
+    .about-description {
+        font-size: 1.25rem;
+    }
+
+    .mission-vision p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin: 1rem 5rem;
+        text-align: center;
+    }
+
+    .more-details img {
+        max-width: initial;
+    }
+
+    .story {
+        display: grid;
+        grid-template-areas: 
+        "pic1 ourstory"
+        "pic1 desc1"
+        "pic1 desc1"
+        "pic1 desc1"
+        "pic1 desc1";
+    }
+
+    .story div {
+        grid-area: pic1;
+    }
+    
+    .story h3 {
+        grid-area: ourstory;
+        text-align: left;
+        margin-left: 2rem;
+        margin-top: 0;
+    }
+
+    .story p {
+        grid-area: desc1;
+        margin-top: -1rem;
+        margin-left: 2rem;
+    }
+
+    .inspiration {
+        display: grid;
+        grid-template-areas: 
+        "inspiration pic2"
+        "desc2 pic2"
+        "desc2 pic2"
+        "desc2 pic2"
+        "desc2 pic2";
+        margin-top: 4rem;
+    }
+
+    .inspiration div {
+        grid-area: pic2;
+    }
+
+    .inspiration h3 {
+        grid-area: inspiration;
+        text-align: left;
+    }
+
+    .inspiration p {
+        grid-area: desc2;
+        margin: -1rem 2rem 0 0;
+
+    }
+
+    .inspiration .about-h3 {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+}
