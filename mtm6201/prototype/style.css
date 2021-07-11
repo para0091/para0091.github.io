@@ -150,6 +150,7 @@ li.active {
     border-radius: 8px;
     margin-bottom: 2rem;
     text-align: center;
+    position: relative;
 }
 
 .popular-item p {
@@ -171,22 +172,16 @@ li.active {
     transition: 250ms;
 }
 
-.product-btn {
-    display: flex;
-    justify-content: space-between;
-}
-
-.cart-button {
-    flex-grow: 2;
-    margin-right: 0.5rem;
-}
-
 .favourite {
-    padding: 1rem;
-    border: 1px solid #49B77E;
+    font-weight: bold;
+    padding: 0.5rem;
+    border: 2px solid #49B77E;
     border-radius: 8px;
     color: #49B77E;
     transition: 250ms;
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
 }
 
 .favourite:hover {
@@ -389,6 +384,15 @@ iframe {
 
     h3 {
         font-size: 1.3rem;
+    }
+
+    .favourite {
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding: 1rem;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
     }
 
     footer {
@@ -599,6 +603,20 @@ iframe {
     
     .popular-item:nth-child(6) {
         grid-area: psix;
+    }
+
+    .product-btn {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cart-button {
+        flex-grow: 2;
+        margin-right: 0.5rem;
+    }
+
+    .favourite {
+        position: initial;
     }
 
     .more-btn {
