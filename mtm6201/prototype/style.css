@@ -74,8 +74,14 @@ nav {
     flex-direction: column;
 }
 
+.nav-img a {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
 .nav-img img {
-    max-width: 50%;
+    max-width: 30%;
 }
 
 .nav-list-items {
@@ -436,7 +442,9 @@ iframe {
     }
     
     .nav-img {
+        display: block;
         flex-basis: 10%;
+        margin-top: 0;
     }
     
     .nav-img img {
