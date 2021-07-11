@@ -34,8 +34,20 @@
     <main>
         <section class="banner">
             <picture>
-                <img src="img/banner.jpg" alt="nutricones banner">
-            </picture>
+
+                <source media="(max-width: 768px)"
+                        srcset="./img/bannerv2-360px.jpg 360w,
+                                ./img/bannerv2-640px.jpg 640w,
+                                ./img/bannerv2-768px.jpg 768w">
+          
+                <source media="(min-width: 769px)"
+                        srcset="./img/banner-768px.jpg 768w,
+                                ./img/banner-1080px.jpg 1080w,
+                                ./img/banner-1400px.jpg 1400w">
+          
+                <img src="img/banner.jpg" alt="Nutricones Banner">
+
+              </picture>
         </section>
         <section class="products container">
             <h2>OUR MOST POPULAR PRODUCTS</h2>
