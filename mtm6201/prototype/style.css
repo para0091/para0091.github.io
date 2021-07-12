@@ -118,8 +118,9 @@ li.active {
     background-color: #49B77E;
 }
 
-.nav-button img {
-    margin-right: 8px;
+.nav-button i {
+    font-size: 1.25rem;
+    margin-right: 0.75rem;
 }
 
 .banner {
@@ -339,15 +340,15 @@ iframe {
 }
 
 .fa-map-marker-alt {
-    animation: icon-wiggle 2s infinite;
+    animation: icon-wiggle 2s 1s infinite;
 }
 
 .fa-envelope {
-    animation: icon-move 1.5s cubic-bezier(.11,.91,.59,.95) infinite;
+    animation: icon-move 1.5s cubic-bezier(.11,.91,.59,.95) 1s infinite;
 }
 
 .fa-phone-alt {
-    animation: icon-shake 1s ease-in-out infinite alternate;
+    animation: icon-shake 1s ease-in-out 1s infinite alternate;
 }
 
 .info-boxes p {
@@ -362,6 +363,9 @@ iframe {
 @keyframes icon-wiggle {
     40% {
        transform: translate(0, -20px);
+    }
+    50% {
+        transform: translate(0, 6px);
     }
     60% {
        transform: translate(0, 0);
@@ -386,11 +390,14 @@ iframe {
     }
     20% {
         opacity: 0;
-        transform: translate(20px, 0);
+        transform: translate(60px, 0) skew(-15deg);
     }
     30% {
-        transform: translate(-40px, 0);
+        transform: translate(-60px, 0);
         opacity: 0;
+    }
+    40% {
+        transform: translate(10px, 0) skew(-15deg);
     }
     50% {
         transform: translate(0, 0);
@@ -406,9 +413,12 @@ iframe {
         transform: rotate(15deg);
     }
     20% {
+        transform: rotate(-20deg);
+    }
+    40% {
         transform: rotate(-15deg);
     }
-    20%, 100% {
+    40%, 100% {
         transform: rotate(-15deg);
     }
 }
@@ -694,6 +704,9 @@ iframe {
     .nav-img {
         display: block;
         flex-basis: 10%;
+    }
+
+    .nav-img a {
         margin-top: 0;
     }
     
@@ -726,6 +739,11 @@ iframe {
 
     li.active {
         border-radius: 8px;
+    }
+
+    .nav-button a {
+        padding: 1.25rem 2rem;
+        transition: 300ms;
     }
 
     .nav-button a:hover {
