@@ -262,6 +262,14 @@ footer p {
     margin: 1rem auto;
 }
 
+.social-icons i {
+    transition: 100ms;
+}
+
+.social-icons i:hover {
+    color: #49B77E;
+}
+
 .social-icons a {
     margin: 0 1rem;
 }
@@ -319,8 +327,11 @@ form button {
     margin: 2.5rem 1rem;
 }
 
+.contact-map {
+    width: 100%;
+}
+
 iframe {
-    max-width: 100%;
     border-radius: 8px;
     animation: right-slideIn 600ms cubic-bezier(.11,.91,.59,.95);
 }
