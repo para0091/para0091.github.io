@@ -1,1 +1,15 @@
-Image Name : Image URL
+/******************
+
+References
+
+******************/
+
+Chocolate Ice Cream: https://unsplash.com/photos/tVs-nga-tpo
+Strawberry Ice Cream: https://unsplash.com/photos/TLD6iCOlyb0
+Pista Ice Cream: https://unsplash.com/photos/alEZLDPPRBU
+Butterscotch Ice Cream: https://unsplash.com/photos/alEZLDPPRBU
+Double Trouble Ice Cream: https://unsplash.com/photos/-xq5BTa2vSk
+Mango Ice Cream: https://unsplash.com/photos/vVsV0vkh0b0
+
+Icons: Font Awesome
+

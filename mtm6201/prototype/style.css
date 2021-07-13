@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-/* Prototype Styles */
+/****************** Prototype Styles ******************/
 
 html {
     font-size: 16px;
@@ -59,25 +59,52 @@ body {
     color: #333131;
 }
 
+
+/* Setting box-sizing border-box for everything */
+
 *,
 *:after,
 *:before {
     box-sizing: inherit;
 }
 
+h1 {
+    font-family: "Bungee", sans-serif;
+    font-size: 3rem;
+    color: #285C47;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+}
+
+h3 {
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
 header {
     box-shadow: 5px 10px 15px rgba(186, 186, 186, 0.12);
 }
+
+/* Setting up a column flexbox for navigation for mobile */
 
 nav {
     display: flex;
     flex-direction: column;
 }
 
+/* Aligning the logo to the center */
+
 .nav-img a {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    padding: 1rem 0;
+    box-shadow: 5px 10px 15px rgba(186, 186, 186, 0.12);
 }
 
 .nav-img img {
@@ -123,9 +150,10 @@ li.active {
     margin-right: 0.75rem;
 }
 
+/* Applying a simple slidein animation for banner */
+
 .banner {
     animation: top-slideIn 600ms cubic-bezier(.11,.91,.59,.95);
-    z-index: -3;
 }
 
 .banner img {
@@ -134,12 +162,14 @@ li.active {
 
 .products {
     margin: 3rem 1.5rem;
-    position: relative;
 }
 
 .products h2 {
     animation: bottom-slideIn 600ms cubic-bezier(.11,.91,.59,.95);
 }
+
+/* Setting popular product items in a grid with 2 columns,
+Applying a bottom slide in animation */
 
 .popular-products {
     margin-top: 40px;
@@ -183,6 +213,9 @@ li.active {
     transition: 250ms;
 }
 
+/* Positioning the favourite button to the top right on mobile,
+which will be changed to be near Add to Cart button */
+
 .favourite {
     font-weight: bold;
     padding: 0.5rem;
@@ -199,6 +232,8 @@ li.active {
     color: #ffffff;
     background-color: #49B77E;
 }
+
+/* Styling the See More button */
 
 .more-btn {
     border-radius: 8px;
@@ -217,25 +252,7 @@ li.active {
     color: #ffffff;
 }
 
-
-h1 {
-    font-family: "Bungee", sans-serif;
-    font-size: 3rem;
-    color: #285C47;
-    text-align: center;
-}
-
-h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    line-height: 1.4;
-}
-
-h3 {
-    font-size: 1.15rem;
-    font-weight: bold;
-}
+/* Styling the footer */
 
 footer {
     background-color: #0E4C33;
@@ -262,6 +279,8 @@ footer p {
     margin: 1rem auto;
 }
 
+/* Adding hover animation to social media icons */
+
 .social-icons i {
     transition: 100ms;
 }
@@ -280,8 +299,7 @@ footer p {
     font-size: 2.5rem;
 }
 
-
-/* Contact Page */
+/********** Contact Page **********/
 
 .contact-head {
     margin: 60px 0;
@@ -295,6 +313,8 @@ form {
     padding: 1.5rem 1.5rem 1rem;
     animation: left-slideIn 600ms cubic-bezier(.11,.91,.59,.95);
 }
+
+/* Styling input fields */
 
 form input, textarea {
     background-color: #F5F5F5;
@@ -321,6 +341,11 @@ form button {
     font-family: "Nunito", sans-serif;
     font-size: 1rem;
     font-weight: bold;
+    transition: 300ms;
+}
+
+form button:hover {
+    background-color: #0E4C33;
 }
 
 .map {
@@ -329,12 +354,11 @@ form button {
 
 .contact-map {
     width: 100%;
-}
-
-iframe {
     border-radius: 8px;
     animation: right-slideIn 600ms cubic-bezier(.11,.91,.59,.95);
 }
+
+/* Styling the icons in the contact information boxes */
 
 .address, .mailaddress, .phone {
     background-color: #F5F5F5;
@@ -350,13 +374,19 @@ iframe {
     font-size: 4rem;
 }
 
+/* Wiggle animation */
+
 .fa-map-marker-alt {
     animation: icon-wiggle 2s 1s infinite;
 }
 
+/* Moving animation */
+
 .fa-envelope {
     animation: icon-move 1.5s cubic-bezier(.11,.91,.59,.95) 1s infinite;
 }
+
+/* Shake animation */
 
 .fa-phone-alt {
     animation: icon-shake 1s ease-in-out 1s infinite alternate;
@@ -371,71 +401,7 @@ iframe {
     margin-bottom: 4rem;
 }
 
-@keyframes icon-wiggle {
-    40% {
-       transform: translate(0, -20px);
-    }
-    50% {
-        transform: translate(0, 6px);
-    }
-    60% {
-       transform: translate(0, 0);
-    }
-    80% {
-        transform: rotate(0deg);
-    }
-    85% {
-        transform: rotate(10deg);
-    }
-    90% {
-        transform: rotate(0deg);
-    }
-    95% {
-        transform: rotate(-10deg);
-    }
-}
-
-@keyframes icon-move {
-    0% {
-        opacity: 1;
-    }
-    20% {
-        opacity: 0;
-        transform: translate(60px, 0) skew(-15deg);
-    }
-    30% {
-        transform: translate(-60px, 0);
-        opacity: 0;
-    }
-    40% {
-        transform: translate(10px, 0) skew(-15deg);
-    }
-    50% {
-        transform: translate(0, 0);
-        opacity: 1;
-    }
-}
-
-@keyframes icon-shake {
-    0% {
-        transform: rotate(0deg);
-    }
-    10% {
-        transform: rotate(15deg);
-    }
-    20% {
-        transform: rotate(-20deg);
-    }
-    40% {
-        transform: rotate(-15deg);
-    }
-    40%, 100% {
-        transform: rotate(-15deg);
-    }
-}
-
-
-/* About Page */
+/********** About Page **********/
 
 .about {
     margin: 60px 0 40px;
@@ -460,6 +426,8 @@ iframe {
 .mission-vision {
     margin-top: 4rem;
 }
+
+/* Applying opposite animations to mission and vision */
 
 .mission {
     animation: left-slideIn 1s cubic-bezier(.11,.91,.59,.95);
@@ -500,6 +468,8 @@ iframe {
 .inspiration {
     margin-top: 2.5rem;
 }
+
+/********** Animations Section **********/
 
 @keyframes bottom-slideIn {
     0% {
@@ -560,8 +530,75 @@ iframe {
     }
 }
 
+@keyframes icon-wiggle {
+    40% {
+       transform: translate(0, -20px);
+    }
+    50% {
+        transform: translate(0, 6px);
+    }
+    60% {
+       transform: translate(0, 0);
+    }
+    80% {
+        transform: rotate(0deg);
+    }
+    85% {
+        transform: rotate(10deg);
+    }
+    90% {
+        transform: rotate(0deg);
+    }
+    95% {
+        transform: rotate(-10deg);
+    }
+}
 
-/* Tablet Styles */
+@keyframes icon-move {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        transform: translate(-10px,0);
+    }
+    20% {
+        opacity: 0;
+        transform: translate(60px, 0) skew(-15deg);
+    }
+    30% {
+        transform: translate(-60px, 0);
+        opacity: 0;
+    }
+    40% {
+        transform: translate(10px, 0) skew(-15deg);
+    }
+    50% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes icon-shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(15deg);
+    }
+    20% {
+        transform: rotate(-20deg);
+    }
+    40% {
+        transform: rotate(-15deg);
+    }
+    40%, 100% {
+        transform: rotate(-15deg);
+    }
+}
+
+
+/********** Tablet Styles **********/
+
 
 @media screen and (min-width: 768px) {
 
@@ -575,6 +612,8 @@ iframe {
         font-size: 1.3rem;
     }
 
+    /* Adjusting the positioning of the favourite button for tablet */
+
     .favourite {
         font-size: 1.1rem;
         font-weight: bold;
@@ -583,6 +622,8 @@ iframe {
         top: 1.5rem;
         right: 1.5rem;
     }
+
+    /* Applying flex to the footer to display the information side by side */
 
     footer {
         display: flex;
@@ -613,9 +654,13 @@ iframe {
 
     /* About Page */
 
+    /* Setting up flex for mission and vision sections */
+
     .mission-vision {
         display: flex;
     }
+
+    /* Applying grid to story and inspiration sections with areas */
 
     .story {
         display: grid;
@@ -644,8 +689,8 @@ iframe {
         grid-area: desc1;
     }
 
-    .more-details p {
-        margin-top: -2rem;
+    .story p {
+        margin-top: 0.5rem;
     }
 
     .inspiration {
@@ -671,7 +716,7 @@ iframe {
 
     .inspiration p {
         grid-area: desc2;
-        margin: -1rem 2rem 0 0;
+        margin: 0 2rem 0 0;
     }
 
     .inspiration .about-h3 {
@@ -680,6 +725,8 @@ iframe {
     }
 
     /* Contact Page */
+
+    /* Applying grid to contact information boxes section */
 
     .info-boxes {
         display: grid;
@@ -692,7 +739,13 @@ iframe {
 
 }    
 
+
+/********** Desktop Styles **********/
+
+
 @media screen and (min-width: 1080px) {
+
+    /* Setting up a container for the desktop version */
 
     .container {
         margin: 0 6rem;
@@ -703,6 +756,8 @@ iframe {
         font-weight: bold;
         text-align: center;
     }
+
+    /* Resetting the flex direction to row for the navigation */
 
     nav {
         flex-direction: row;
@@ -719,6 +774,7 @@ iframe {
 
     .nav-img a {
         margin-top: 0;
+        box-shadow: none;
     }
     
     .nav-img img {
@@ -738,6 +794,8 @@ iframe {
         margin: 0 2em;
         font-weight: bold;
     }
+
+    /* Hover animation for navigation links */
 
     .nav-item a {
         transition: 250ms;
@@ -774,6 +832,8 @@ iframe {
     .popular-caption {
         display: block;
     }
+
+    /* Editing the grid to be 3 columns for the products section */
 
     .popular-products {
         display: grid;
@@ -813,6 +873,8 @@ iframe {
         grid-area: psix;
     }
 
+    /* Applying flex to the product button section to accommodate the favourite button */
+
     .product-btn {
         display: flex;
         justify-content: space-between;
@@ -822,6 +884,8 @@ iframe {
         flex-grow: 2;
         margin-right: 0.5rem;
     }
+
+    /* Resetting the absolute positioning given to the favourite button */
 
     .favourite {
         position: initial;
@@ -850,6 +914,8 @@ iframe {
         margin: 4rem 4rem 3rem;
     }
 
+    /* Applying flex to the contact form and map section */
+
     .contact {
         display: flex;
         align-items: flex-start;
@@ -870,6 +936,8 @@ iframe {
     .info-boxes p {
         margin-top: 1rem;
     }
+
+    /* Applying grid to the contact form to adjust the different form fields */
 
     .contact-form {
         display: grid;
