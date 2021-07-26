@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,64 +8,86 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Bootstrap This! | Fuad Saneen Parakkal</title>
 </head>
-
 <body>
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
         <div class="container">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Content
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#typos">Typography</a></li>
-                  <li><a class="dropdown-item" href="#images">Images</a></li>
+            <!-- Hamburger button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapses nav bar for mobile -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Content
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#typos">Typography</a></li>
+                            <li><a class="dropdown-item" href="#images">Images</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Utilities
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#backgrounds">Backgrounds</a></li>
+                            <li><a class="dropdown-item" href="#colors">Colors</a></li>
+                            <li><a class="dropdown-item" href="#display">Display</a></li>
+                            <li><a class="dropdown-item" href="#position">Position</a></li>
+                            <li><a class="dropdown-item" href="#spacing">Spacing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Layout
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#containers">Containers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Components
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#navigationbar">Navigation Bar</a></li>
+                            <li><a class="dropdown-item" href="#cards">Cards</a></li>
+                        </ul>
+                    </li>
                 </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Utilities
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#backgrounds">Backgrounds</a></li>
-                  <li><a class="dropdown-item" href="#colors">Colors</a></li>
-                  <li><a class="dropdown-item" href="#display">Display</a></li>
-                  <li><a class="dropdown-item" href="#position">Position</a></li>
-                  <li><a class="dropdown-item" href="#spacing">Spacing</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Layout
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#containers">Containers</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Components
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#navigationbar">Navigation Bar</a></li>
-                  <li><a class="dropdown-item" href="#cards">Cards</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+            </div>
         </div>
-      </nav>
+    </nav>
+
+    <!-- Main content -->
+    
     <div class="container">
+        <div class="row mt-5">
+            <h1 class="display-3 tx-bold"><strong>About Bootstrap</strong></h1>
+            <p class="mt-2">
+                Bootstrap is a free and open-source CSS framework that was created in 2011 by <strong>Mark Otto</strong> and <strong>Jacob Thornton</strong>. Jacob Thornton on why Bootstrap was created: "I just wanted to create a toolkit internally to make it so that my peers on my team could create these tools in a beautiful way!". Bootstrap is used by many developers around the world to create fast and responsive websites. 
+            </p>
+        </div>
+
+        <!-- Content section -->
+        
         <div class="row mt-5">
             <h2 class="display-4">Content</h2>
         </div>
+        
+        <!-- Typography -->
+        
         <div class="row mt-5">
             <div class="col-lg-3 col-sm-12 mb-sm-4">
                 <h3 id="typos">Typography</h3>
@@ -91,6 +112,9 @@
                 <h3 class="display-3">Display 3</h3>
             </div>
         </div>
+
+        <!-- Images -->
+        
         <div class="row mt-5">
             <div class="col-lg-3 col-sm-12 mb-sm-4">
                 <h3 id="images">Images</h3>
@@ -100,13 +124,19 @@
                 <p>Applying img-thumbnail class gives the image a 1px border. <br>
                     We can align images by using text alignment classes as well as float classes. <br>
                     Center aligning block-level images can be done by applying mx-auto.</p>
-                <!-- <img src="https://via.placeholder.com/1000x200" alt="placeholder" class="img-fluid"> -->
+                <img src="https://via.placeholder.com/1000x200" alt="placeholder" class="img-fluid">
                 <p>This image is 1000px wide but as we have applied img-fluid, it fits inside the container.</p>
             </div>
         </div>
+
+        <!-- Utilities section -->
+
         <div class="row mt-5">
             <h2 class="display-4">Utilities</h2>
         </div>
+
+        <!-- Backgrounds -->
+
         <div class="row mt-5">
             <div class="col-lg-3 col-sm-12 mb-sm-4">
                 <h3 id="backgrounds">Backgrounds</h3>
@@ -130,6 +160,9 @@
                 <h5>Example</h5>
             </div>
         </div>
+
+        <!-- Colors -->
+
         <div class="row mt-5">
             <div class="col-lg-3 col-sm-12 mb-sm-4">
                 <h3 id="colors">Colors</h3>
@@ -145,6 +178,9 @@
                 </p>
             </div>
         </div>
+
+        <!-- Display -->
+
         <div class="row mt-5">
             <div class="col-lg-3 col-sm-12 mb-sm-4">
                 <h3 id="display">Display</h3>
@@ -168,6 +204,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- Position -->
+
         <div class="row mt-5">
             <div class="col-lg-3 col-sm-12 mb-sm-4">
                 <h3 id="position">Position</h3>
@@ -185,6 +224,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- Spacing -->
+
         <div class="row mt-5">
             <div class="col-lg-3 col-sm-12 mb-sm-4">
                 <h3 id="spacing">Spacing</h3>
@@ -204,10 +246,13 @@
                 </div>
             </div>
         </div>
+
+        <!-- Layout -->
+
         <div class="row mt-5">
             <h2 class="display-4">Layout</h2>
         </div>
-        <div class="row my-5">
+        <div class="row">
             <div class="col-lg-3 col-sm-12 mb-sm-4">
                 <h3 id="containers">Containers</h3>
             </div>
@@ -220,9 +265,15 @@
                     Responsive: .container-sm, .container-md, .container-lg, .container-xl, .container-xxl</p>
             </div>
         </div>
-        <div class="row">
+
+        <!-- Components section -->
+
+        <div class="row mt-5">
             <h2 class="display-4">Components</h2>
         </div>
+
+        <!-- Navigation Bar -->
+
         <div class="row mt-5">
             <div class="col-lg-3 col-sm-12 mb-sm-4">
                 <h4 id="navigationbar">Navigation Bar</h4>
@@ -252,6 +303,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- Cards -->
+
         <div class="row my-5">
             <div class="col-lg-3 col-sm-12 mb-sm-4">
                 <h4 id="cards">Cards</h4>
@@ -267,16 +321,18 @@
                     the images.</p>
                 <div class="card-example d-flex">
                     <div class="card w-50 me-4">
-                        <!-- <img src="https://via.placeholder.com/150x100" alt="" class="card-img-top"> -->
+                        <img src="https://via.placeholder.com/150x100" alt="" class="card-img-top">
                         <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vero accusantium autem, harum est consequuntur voluptates.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vero
+                                accusantium autem, harum est consequuntur voluptates.</p>
                             <a href="#" class="btn btn-primary">Button</a>
                         </div>
                     </div>
                     <div class="card w-50">
-                        <!-- <img src="https://via.placeholder.com/150x100" alt="" class="card-img-top"> -->
+                        <img src="https://via.placeholder.com/150x100" alt="" class="card-img-top">
                         <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vero accusantium autem, harum est consequuntur voluptates.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vero
+                                accusantium autem, harum est consequuntur voluptates.</p>
                             <a href="#" class="btn btn-primary">Button</a>
                         </div>
                     </div>
@@ -284,7 +340,10 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
 </body>
+
 </html>
