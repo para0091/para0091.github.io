@@ -1,94 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Bootstrap This! | Fuad Saneen Parakkal</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
         <div class="container">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">About</a>
-            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Content
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#typos">Typography</a></li>
+                  <li><a class="dropdown-item" href="#images">Images</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Utilities
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#backgrounds">Backgrounds</a></li>
+                  <li><a class="dropdown-item" href="#colors">Colors</a></li>
+                  <li><a class="dropdown-item" href="#display">Display</a></li>
+                  <li><a class="dropdown-item" href="#position">Position</a></li>
+                  <li><a class="dropdown-item" href="#spacing">Spacing</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Layout
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#containers">Containers</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Components
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#navigationbar">Navigation Bar</a></li>
+                  <li><a class="dropdown-item" href="#cards">Cards</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
     <div class="container">
         <div class="row mt-5">
-            <h2 class="h2">Layout</h2>
+            <h2 class="display-4">Content</h2>
         </div>
         <div class="row mt-5">
-            <div class="col-3">Containers</div>
-            <div class="col-9">
-                <p>Navigation bars are so is used to up!<br>is used to</p>
+            <div class="col-lg-3 col-sm-12 mb-sm-4">
+                <h3 id="typos">Typography</h3>
+            </div>
+            <div class="col-lg-9 col-sm-12">
+                <h4>Normal Headings</h4>
+                <p>Just like HTML, there are 6 headings, from h1 to h6. We can also use .h1 to .h6 classes as needed.
+                </p><br>
+                <h4>Display Headings</h4>
+                <p>Display headings are a larger type of heading and it is used if we need to bring focus to something.
+                </p><br>
+                <h4>Inline text elements</h4>
+                <p>We can also use elements like mark (highlighted text), del (deleted), s (strikethrough), ins (new
+                    addition), u (underline), small (fine print), strong (bold), and em (itialicized).</p>
+                <p>Other classes include alignment, abbreviations, and blockquotes.</p>
+                <h5>Examples:</h5>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h1 class="display-1">Display 1</h1>
+                <h2 class="display-2">Display 2</h2>
+                <h3 class="display-3">Display 3</h3>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-3 col-sm-12 mb-sm-4">
+                <h3 id="images">Images</h3>
+            </div>
+            <div class="col-lg-9 col-sm-12">
+                <p>We can simply make responsive images with Bootstrap by applying the img-fluid class.</p>
+                <p>Applying img-thumbnail class gives the image a 1px border. <br>
+                    We can align images by using text alignment classes as well as float classes. <br>
+                    Center aligning block-level images can be done by applying mx-auto.</p>
+                <!-- <img src="https://via.placeholder.com/1000x200" alt="placeholder" class="img-fluid"> -->
+                <p>This image is 1000px wide but as we have applied img-fluid, it fits inside the container.</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <h2 class="display-4">Utilities</h2>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-3 col-sm-12 mb-sm-4">
+                <h3 id="backgrounds">Backgrounds</h3>
+            </div>
+            <div class="col-lg-9 col-sm-12 lh-lg">
+                <p>We can apply different background classes to give various background colors. Same goes with
+                    background gradients.</p>
+                <p>Colors: <span class="bg-primary p-1">bg-primary</span>, <span
+                        class="bg-secondary p-1">bg-secondary</span>, <span class="bg-success p-1">bg-success</span>,
+                    <span class="bg-danger p-1">.bg-danger</span>, <span class="bg-warning p-1">.bg-warning</span>,
+                    <span class="bg-info p-1">bg-info</span>, <span class="bg-light p-1">bg-light</span>, <span
+                        class="bg-dark p-1 text-white">bg-dark</span>, etc.</p>
+                <p>Gradients: <span class="bg-primary bg-gradient p-1">bg-primary</span>, <span
+                        class="bg-secondary bg-gradient p-1">bg-secondary</span>, <span
+                        class="bg-success bg-gradient p-1">bg-success</span>, <span
+                        class="bg-danger bg-gradient p-1">bg-danger</span>, <span
+                        class="bg-warning bg-gradient p-1">bg-warning</span>, <span
+                        class="bg-info bg-gradient p-1">bg-info</span>, <span
+                        class="bg-light bg-gradient p-1">bg-light</span>, <span
+                        class="bg-dark bg-gradient p-1 text-white">bg-dark</span>, etc.</p>
+                <h5>Example</h5>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-3 col-sm-12 mb-sm-4">
+                <h3 id="colors">Colors</h3>
+            </div>
+            <div class="col-lg-9 col-sm-12">
+                <p>There are a number of utility classes for colors in Bootstrap.</p>
+                <p>Some of them are: <span class="text-primary">.text-primary</span> , <span
+                        class="text-secondary">.text-secondary</span> , <span class="text-success">.text-success</span>
+                    , <span class="text-danger">.text-danger</span> , <span class="text-warning">.text-warning</span> ,
+                    <span class="text-info">.text-info</span> , <span class="text-light bg-dark">.text-light</span> ,
+                    <span class="text-dark">.text-dark</span> , <span class="text-body">.text-body</span> , <span
+                        class="text-muted">.text-muted</span> , <span class="text-white">.text-white</span>.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-3 col-sm-12 mb-sm-4">
+                <h3 id="display">Display</h3>
+            </div>
+            <div class="col-lg-9 col-sm-12">
+                <p>We can apply display properties to elements by using .d-{value} classes.</p>
+                <p>.d-{value} is used for xs breakpoint while .d-{breakpoint}-{value} is used for other breakpoints.</p>
+                <p>The values are: none, inline, inline-block, block, grid, table, table-cell, table-row, flex and
+                    inline-flex.</p>
+                <p>Simply apply different display classes to toggle the display value at different breakpoints if
+                    needed.</p>
+                <h5 class="mb-3">Examples</h5>
+                <div class="d-inline bg-dark text-white p-3 mt-1">display: inline;</div>
+                <div class="d-inline bg-success text-white p-3 my-5">display: inline;</div>
+                <div class="d-block bg-dark text-white p-3 mt-4">display: block;</div>
+                <div class="d-block bg-success text-white p-3">display: block;</div>
+                <div class="d-flex bg-dark text-white p-3 mt-4">
+                    <div class="p-1 bg-primary mx-4">display: flex;</div>
+                    <div class="p-1 bg-primary mx-4">display: flex;</div>
+                    <div class="p-1 bg-primary mx-4">display: flex;</div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-3 col-sm-12 mb-sm-4">
+                <h3 id="position">Position</h3>
+            </div>
+            <div class="col-lg-9 col-sm-12">
+                <p>Position utility classes can be used to configure the positioning of an element. Eg.
+                    .position-static.</p>
+                <p>To arrange the elements, we use {property}-{position}, where property is [top, bottom] for y axis and
+                    [start, end] for x axis. and position is the value. We can use the value 0 for 0 edge position, 50
+                    for 50% edge position and 100 for 100% edge position.</p>
+                <p>To center elements, use the class .translate-middle. Also use .translate-middle-x or
+                    .translate-middle-y as needed.</p>
+                <div class="box p-5 bg-dark position-relative">
+                    <div class="position-absolute start-50 translate-middle text-white">Centered items</div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-3 col-sm-12 mb-sm-4">
+                <h3 id="spacing">Spacing</h3>
+            </div>
+            <div class="col-lg-9 col-sm-12">
+                <p>We can adjust the margin, padding and gap properties by using their corresponding utility classes.
+                </p>
+                <p>The format to follow to apply margin and padding is {property}{sides}-{size}, where property is m or
+                    p, which is margin or padding. <br>
+                    sides are: t=top, b=bottom, s=start, e=end, x=left+right, y=top+bottom and blank. <br>
+                    size is one of: 0,1,2,3,4,5 or auto.</p>
+                <p>Another spacing class we can use is gap, which lets us add a gap between individual grid items, but
+                    we have to be using display: grid; (d-grid).</p>
+                <div class="d-grid gap-3">
+                    <div class="bg-light p-3 border">First item</div>
+                    <div class="bg-light p-3 border">Second items</div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <h2 class="display-4">Layout</h2>
+        </div>
+        <div class="row my-5">
+            <div class="col-lg-3 col-sm-12 mb-sm-4">
+                <h3 id="containers">Containers</h3>
+            </div>
+            <div class="col-lg-9 col-sm-12">
+                <p>Containers are is used to keep all the content inside it in a specific maximum width for each
+                    breakpoint. There are default, fluid and responsive containers.<br>
+                    Default [.container]: This container is resposive and it changes the max-width according to the
+                    breakpoints.<br>
+                    Fluid [.container-fluid]: This is a container that takes up the full width of the viewport.<br>
+                    Responsive: .container-sm, .container-md, .container-lg, .container-xl, .container-xxl</p>
             </div>
         </div>
         <div class="row">
-            <h2 class="h2">Content</h2>
+            <h2 class="display-4">Components</h2>
         </div>
         <div class="row mt-5">
-            <div class="col-3">Typography</div>
-            <div class="col-9">
-                <p>Navigation bars are so is used to up!<br>is used to</p>
+            <div class="col-lg-3 col-sm-12 mb-sm-4">
+                <h4 id="navigationbar">Navigation Bar</h4>
+            </div>
+            <div class="col-lg-9 col-sm-12">
+                <p>Bootstrap has a navigation bar component which is very powerful and useful.</p>
+                <p>Some of the main ideas are:</p>
+                <p>Nav tags have to be applied a class of .navbar for default navbar and .navbar-expand +
+                    {-sm/-md/-lg/-xl/-xxl} for responsive navbars. <br>
+                    We can edit the navbar by using flex and spacing classes as well as editing the container. <br>
+                    We can even use a form in the navbar if needed. In addition to that, we can simply use a tags only
+                    instead of using lists. Adding a dropdown menu to the navbar is also quite easy.</p>
+                <p>We can use different background colors and theme the navbar as we like. <br>
+                    Use position utility classes to edit the positioning of the navbar. For eg, to stick the navbar to
+                    the top, we can use the class sticky-top.</p>
+            </div>
+            <div class="col-sm-12 col-lg-9 offset-lg-3">
+                <div class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="#" class="nav-link active">Number 1</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Number 2</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Number 3</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Number 4</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row mt-5">
-            <div class="col-3">Images</div>
-            <div class="col-9">
-                <p>Navigation bars are so is used to up!<br>is used to</p>
+        <div class="row my-5">
+            <div class="col-lg-3 col-sm-12 mb-sm-4">
+                <h4 id="cards">Cards</h4>
             </div>
-        </div>
-        <div class="row">
-            <h2 class="h2">Components</h2>
-        </div>
-        <div class="row mt-5">
-            <div class="col-3">Navigation Bar</div>
-            <div class="col-9">
-                <p>Navigation bars are so is used to up!<br>is used to</p>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-3">Cards</div>
-            <div class="col-9">
-                <p>Navigation bars are so is used to up!<br>is used to</p>
-            </div>
-        </div>
-        <div class="row">
-            <h2 class="h2">Utilities</h2>
-        </div>
-        <div class="row mt-5">
-            <div class="col-3">Backgrounds</div>
-            <div class="col-9">
-                <p>Navigation bars are so is used to up!<br>is used to</p>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-3">Colors</div>
-            <div class="col-9">
-                <p>Navigation bars are so is used to up!<br>is used to</p>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-3">Display</div>
-            <div class="col-9">
-                <p>Navigation bars are so is used to up!<br>is used to</p>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-3">Position</div>
-            <div class="col-9">
-                <p>Navigation bars are so is used to up!<br>is used to</p>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-3">Spacing</div>
-            <div class="col-9">
-                <p>Navigation bars are so is used to up!<br>is used to</p>
+            <div class="col-lg-9 col-sm-12">
+                <p>Cards in Bootstrap are small containers of content. They can have images, text, lists, links and even
+                    a header and footer.</p>
+                <p>We can nest cards in rows and use the grid system to control multiple cards. In addition, we can
+                    style the cards as we like using Bootstrap utilities as well as Custom CSS.</p>
+                <p>We can even add navigation inside cards using Bootstrap's nav components.</p>
+                <p>Multiple cards can be grouped together with the help of Card layouts.</p>
+                <p>It is also easy to change up the color schemes and text alignment and we can even play around with
+                    the images.</p>
+                <div class="card-example d-flex">
+                    <div class="card w-50 me-4">
+                        <!-- <img src="https://via.placeholder.com/150x100" alt="" class="card-img-top"> -->
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vero accusantium autem, harum est consequuntur voluptates.</p>
+                            <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                    </div>
+                    <div class="card w-50">
+                        <!-- <img src="https://via.placeholder.com/150x100" alt="" class="card-img-top"> -->
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vero accusantium autem, harum est consequuntur voluptates.</p>
+                            <a href="#" class="btn btn-primary">Button</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
