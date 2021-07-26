@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Prompt', Helvetica, sans-serif;
+    background-color: #fdf6f0;
+}
+
+h1 {
+    font-family: 'DM Serif Display', Helvetica, sans-serif;
+    color: #8DAD93;
+}
+
+h2 {
+    font-family: 'DM Serif Display', Helvetica, sans-serif;
+    color: #324235;
+}
+
+h3 {
+    font-family: 'DM Serif Display', Helvetica, sans-serif;
+    color: #324235;
+}
+
