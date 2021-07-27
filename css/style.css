@@ -59,11 +59,15 @@ img {
     padding: 3rem 1rem;
 }
 
+.work-h1 {
+    text-align: center;
+}
+
+
 .p-btn {
     padding: 0.5rem;
     border-radius: 4px;
     color: #FDF6F0;
-    margin: 1rem 0;
 }
 
 .p-appdesign {
@@ -88,6 +92,14 @@ img {
 
 .p-illustration{
     background-color: #BFA4EB;
+}
+
+.project-h2 {
+    margin: 1rem 0;
+}
+
+.project-item {
+    margin: 2rem 0;
 }
 
 
@@ -227,4 +239,59 @@ footer li {
 .c-social-link {
     display: flex;
     align-items: center;
+}
+
+
+/* Tablet Styles */
+
+@media screen and (min-width:720px) {
+    
+
+    /* Footer */
+
+    footer {
+        margin-top: 2rem;
+    }
+
+    .footer-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .f-nav-list {
+        display: flex;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+    /* About Page */
+
+    .skills {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .skills h2 {
+        padding: 2rem 0.9rem;
+    }
+
+
+    /* Contact Page */
+
+    .c-social-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .c-social-items div {
+        flex-basis: 33.3%;
+        justify-content: center;
+    }
+
+    .c-social-items div:nth-child(4), .c-social-items div:nth-child(5) {
+        flex-grow: 2;
+        justify-content: center;
+    }
+
 }
