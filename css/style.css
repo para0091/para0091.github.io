@@ -1,0 +1,230 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+
+.nav-green {
+    background-color: green;
+}
+
+.wrapper {
+    margin: 1.5rem;
+}
+
+body {
+    font-family: 'Prompt', Helvetica, sans-serif;
+    background-color: #fdf6f0;
+}
+
+h1 {
+    font-family: 'DM Serif Display', Helvetica, sans-serif;
+    color: #8DAD93;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: 'DM Serif Display', Helvetica, sans-serif;
+    color: #324235;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'DM Serif Display', Helvetica, sans-serif;
+    color: #324235;
+    font-size: 1.5rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a, li {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Home Page */
+
+.h-about {
+    background-color: #324235;
+    color: #fdf6f0;
+    padding: 3rem 1rem;
+}
+
+.p-btn {
+    padding: 0.5rem;
+    border-radius: 4px;
+    color: #FDF6F0;
+    margin: 1rem 0;
+}
+
+.p-appdesign {
+    background-color: #EFAEAE;
+}
+
+.p-smedia {
+    background-color: #54B59B;
+}
+
+.p-branding {
+    background-color: #F3B08B;
+}
+
+.p-print {
+    background-color: #EFAEAE;
+}
+
+.p-webdesign {
+    background-color: #54B59B;
+}
+
+.p-illustration{
+    background-color: #BFA4EB;
+}
+
+
+
+/* Footer */
+
+footer {
+    background-color: #324235;
+    color: #FDF6F0;
+}
+
+footer a {
+    color: #FDF6F0;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer li {
+    list-style-type: none;
+    text-align: center;
+    margin: 1rem;
+}
+
+.f-socialmedia {
+    display: flex;
+    justify-content: center;
+}
+
+.f-socialmedia a {
+    margin: 1rem;
+}
+
+.f-socialmedia i {
+    font-size: 2rem;
+}
+
+.f-socialmedia .fab:hover, .fas:hover {
+    color: #ffffff;
+}
+
+
+/* About Page */
+
+.about-details, .about-more, .about-experience {
+    margin-top: 2rem;
+} 
+
+.about-h1 {
+    margin: 4rem 0 2rem;
+}
+
+.about-experience {
+    margin-top: 4rem;
+}
+
+.track {
+    margin-bottom: 1rem;
+}
+
+.date {
+    margin-bottom: 0.25rem;
+}
+
+.work-item {
+    margin-bottom: 1.5rem;
+}
+
+.skills {
+    margin: 4rem 0 3rem;
+}
+
+.skills h2 {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    margin-top: 1rem;
+}
+
+/* Contact Page */
+
+.contact-h1 {
+    margin: 4rem 0 2rem;
+}
+
+.contact-form {
+    margin: 4rem 0;
+}
+
+.contact-form div {
+    margin: 1rem 0;
+}
+
+.contact-form label {
+    margin: 0 0 0.5rem 0;
+}
+
+.contact-form input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.contact-form textarea {
+    resize: none;
+    display: block;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.contact-form button {
+    background-color: #8DAD93;
+    color: #FDF6F0;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+}
+
+.c-socialmedia {
+    margin-bottom: 4rem;
+}
+
+.c-social-items a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin: 1rem 0;
+}
+
+.c-social-items i {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.c-social-link {
+    display: flex;
+    align-items: center;
+}

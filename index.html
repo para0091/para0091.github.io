@@ -10,12 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Prompt:wght@300;400;700&display=swap" rel="stylesheet"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Fuad Saneen Parakkal | Portfolio</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark nav-green sticky-top">
             <div class="container">
                 <!-- Hamburger button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,13 +25,13 @@
                 <div class="collapse navbar-collapse flex-row-reverse">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">About</a>
+                            <a class="nav-link" aria-current="page" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Contact</a>
+                            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">Resume</a>
@@ -42,63 +42,90 @@
         </nav>
     </header>
     <main>
-        <h1>Hi!<br>
-        I'm Fuad Saneen.</h1>
-        <p>Interactive Media Design student @ Algonquin College.</p>
-        <div>
-            <p>I'm Fuad, a graphic designer transitioning to product design.
-            <br>
-            I take pride in creating interfaces and visual designs that make people's lives better and easier.
-            </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h1>Hi!<br>
+                    I'm Fuad Saneen.</h1>
+                    <p>Interactive Media Design student @ Algonquin College.</p>
+                </div>
+                <div class="col-lg-5">
+                    <picture>
+                        <img src="img/portrait.jpg" alt="fuad saneen portrait">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section class="container h-about text-center">
+            <div class="row">
+                <p>I'm Fuad, a graphic designer transitioning to product design.</p>
+                <p>
+                I take pride in creating interfaces and visual designs that make people's lives better and easier.
+                </p>
+            </div>
         </div>
         <div class="selected-work">
-            <div class="categories">
-
+            <div class="row">
+                <h2>Selected Work</h2>
             </div>
-            <div class="projects">
+            <div class="row categories d-grid">
+                <a href="" class="p-btn p-appdesign">App Design</a>
+                <a href="" class="p-btn p-illustration">Illustration</a>
+                <a href="" class="p-btn p-webdesign">Web Design</a>
+                <a href="" class="p-btn p-print">Print</a>
+                <a href="" class="p-btn p-smedia">Social Media</a>
+                <a href="" class="p-btn p-branding">Branding</a>
+            </div>
+            <div class="row projects">
                 <div class="spi">
-                    <img src="" alt="">
+                    <img src="img/spi.jpg" alt="">
                     <h2>SPI Cinemas Mobile App Redesign</h2>
-                    <a href=""></a>
+                    <a href="" class="p-btn p-appdesign">App Design</a>
                 </div>
                 <div class="posters">
-                    <img src="" alt="">
+                    <img src="img/sm-cover.jpg" alt="">
                     <h2>Social Media Posters</h2>
-                    <a href=""></a>
+                    <a href="" class="p-btn p-smedia">Social Media</a><a href="" class="p-btn p-illustration">Illustration</a>
                 </div>
                 <div class="logofolio">
-                    <img src="" alt="">
+                    <img src="img/logofolio.jpg" alt="">
                     <h2>Logofolio 2020</h2>
-                    <a href=""></a>
+                    <a href="" class="p-btn p-branding">Branding</a>
                 </div>
                 <div class="dmg">
-                    <img src="" alt="">
+                    <img src="img/brochure.jpg" alt="">
                     <h2>DMG Events</h2>
-                    <a href=""></a>
+                    <a href="" class="p-btn p-print">Print</a>
                 </div>
                 <div class="kreative-clan">
-                    <img src="" alt="">
+                    <img src="img/kc-cover.jpg" alt="">
                     <h2>Kreative Clan Website Redesign</h2>
-                    <a href=""></a>
+                    <a href="" class="p-btn p-webdesign">Web Design</a>
                 </div>
                 <div class="thai-resort">
-                    <img src="" alt="">
+                    <img src="img/thai-resort.jpg" alt="">
                     <h2>Thai Resort Website Redesign</h2>
-                    <a href=""></a>
+                    <a href="" class="p-btn p-webdesign">Web Design</a><a href="" class="p-btn p-branding">Branding</a>
                 </div>
             </div>
         </div>
     </main>
     <footer>
         <img src="" alt="">
-        <nav>
-
+        <nav class="footer-nav">
+            <ul class="f-nav-list">
+                <li class="f-nav-item"><a href="index.html">HOME</a></li>
+                <li class="f-nav-item"><a href="about.html">ABOUT</a></li>
+                <li class="f-nav-item"><a href="contact.html">CONTACT</a></li>
+                <li class="f-nav-item"><a href="resume.html">RESUME</a></li>
+            </ul>
         </nav>
-        <div>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+        <div class="f-socialmedia">
+            <a href="mailto:hi@fuadsaneen.com"><i class="fas fa-envelope-square"></i></i></a>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.dribbble.com"><i class="fab fa-dribbble-square"></i></a>
         </div>
         <p>&copy; Copyright 2021 - Fuad Saneen</p>
     </footer>
