@@ -7,12 +7,13 @@ html {
 }
 
 
-.nav-green {
-    background-color: green;
+.container {
+    max-width: 1200px;
 }
 
 .wrapper {
-    margin: 1.5rem;
+    max-width: 1200px;
+    margin: 2rem auto;
 }
 
 body {
@@ -53,6 +54,24 @@ img {
 
 /* Home Page */
 
+.nav-green {
+    background-color: #FDF6F0;
+    color: #324235;
+    border-bottom: 2px solid #324235;
+}
+
+.active {
+    color: #324235;
+}
+
+.hero {
+    align-items: center;
+}
+
+.hero-img {
+    border: 2px solid #324235;
+}
+
 .h-about {
     background-color: #324235;
     color: #fdf6f0;
@@ -61,13 +80,24 @@ img {
 
 .work-h1 {
     text-align: center;
+    color: #324235;
 }
 
+.selected-work .row p {
+    margin-bottom: 0.5rem;
+}
+
+.categories {
+    max-width: 400px;
+    margin: 0 auto;
+}
 
 .p-btn {
-    padding: 0.5rem;
-    border-radius: 4px;
+    padding: 0.25rem 0.75rem;
+    border-radius: 24px;
     color: #FDF6F0;
+    font-size: 0.75rem;
+    text-transform: uppercase;
 }
 
 .p-appdesign {
@@ -80,19 +110,23 @@ img {
 
 .p-branding {
     background-color: #F3B08B;
+    padding: 0.25rem 1.1rem;
 }
 
 .p-print {
     background-color: #EFAEAE;
+    padding: 0.25rem 1.9rem;
 }
 
 .p-webdesign {
     background-color: #54B59B;
 }
 
-.p-illustration{
+.p-illustration {
     background-color: #BFA4EB;
+    padding: 0.25rem 0.85rem;
 }
+
 
 .project-h2 {
     margin: 1rem 0;
@@ -142,6 +176,11 @@ footer li {
     color: #ffffff;
 }
 
+.copyright {
+    text-align: center;
+    padding: 2rem;
+}
+
 
 /* About Page */
 
@@ -151,6 +190,14 @@ footer li {
 
 .about-h1 {
     margin: 4rem 0 2rem;
+}
+
+.about-images img {
+    margin-bottom: 2rem;
+}
+
+.about-images img:nth-child(1) {
+    margin-top: 2rem;
 }
 
 .about-experience {
@@ -216,8 +263,9 @@ footer li {
     color: #FDF6F0;
     display: block;
     width: 100%;
-    padding: 0.5rem;
+    padding: 1rem;
     border: none;
+    transition: 250ms linear;
 }
 
 .c-socialmedia {
@@ -242,10 +290,14 @@ footer li {
 }
 
 
+
 /* Tablet Styles */
 
 @media screen and (min-width:720px) {
     
+    .container-fluid {
+        padding: 2.5rem;
+    }
 
     /* Footer */
 
@@ -265,7 +317,27 @@ footer li {
         padding-left: 0;
     }
 
+    .f-nav-item:nth-child(1) {
+        margin-left: 0;
+    }
+
+    .copyright {
+        text-align: left;
+        padding-left: 0;
+    }
+
     /* About Page */
+
+    .about-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem;
+        margin: 4rem 0;
+    }
+
+    .about-images img:nth-child(1) {
+        margin-right: auto;
+    }
 
     .skills {
         display: flex;
@@ -294,4 +366,125 @@ footer li {
         justify-content: center;
     }
 
+}
+
+@media screen and (min-width:1080px) {
+    
+    .container-fluid {
+        padding: 0 140px;
+    }
+
+    .h-about {
+        font-size: 1.5rem;
+        padding: 4rem 16rem;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .categories {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /* About Page */
+
+
+    .about-h1 {
+        margin: 0;
+    }
+
+    .about-details {
+        display: flex;
+        align-items: flex-start;
+        margin: 6rem 0 2rem 0;
+    }
+
+    .about-details div {
+        flex-basis: 50%;
+    }
+
+    .about-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .about-images img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-images img:nth-child(1) {
+        margin-right: auto;
+    }
+
+
+    .about-more {
+        display: flex;
+    }
+
+    .about-more h2 {
+        flex-basis: 33.3%;
+    }
+
+    .about-more p {
+        flex-basis: 66.7%;
+    }
+
+    .about-experience {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-experience .work-details {
+        grid-column: 2/4;
+    }
+
+    .skills {
+        grid-column: 1/4;
+        margin-top: 6rem;
+    }
+
+    .skills h2 {
+        padding: 2rem 5rem;
+    }
+
+
+    /* Contact Page */
+
+
+    .contact-desc {
+        max-width: 600px;
+    }
+
+    .forms {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 4rem;
+        grid-column-gap: 4rem;
+    }
+
+    .contact-form {
+        margin-top: 0;
+    }
+
+    .contact-form button:hover {
+        background-color: #47644c;
+    }
+
+    .c-social-items {
+        display: block;
+        text-align: left;
+    }
+
+    .c-social-items div{
+        justify-content: flex-start;
+    }
+
+    .c-social-items div:nth-child(4), .c-social-items div:nth-child(5) {
+        justify-content: flex-start;
+    }
 }

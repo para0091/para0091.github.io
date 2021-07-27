@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark nav-green sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light nav-green sticky-top">
             <div class="container">
                 <!-- Hamburger button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,10 +25,10 @@
                 <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="about.html">About</a>
+                            <a class="nav-link active" aria-current="page" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
@@ -41,11 +41,13 @@
             </div>
         </nav>
     </header>
-    <main class="wrapper">
+    <main class="container-fluid">
         <section class="about-details">
             <div>
                 <h1 class="about-h1">I'm Fuad.
                     <br>Nice to meet you.</h1>
+            </div>
+            <div>
                 <p>
                     I’m Fuad Saneen, a product designer currently working at Kreative Clan. I was born and raised in Kannur, Kerala. I have tinkered with computers and mobile phones as long as I can remember.
                 </p>
@@ -58,19 +60,17 @@
                 </p>   
             </div>
         </section>
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
+        <section class="about-images">
+            <img src="img/dribbble.jpg" alt="">
+            <img src="img/onboarding-header.jpg" alt="">
+        </section>
         <section class="about-more">
-            <div>
-                <h2>More About Me</h2>
-                <p>I’ve had the opportunity to work on several regional and international projects including the mighty Daily Mail Group. I’m learning more and more by the day and I’m ready for any freelance work that comes my way. When I’m not designing, you can find me watching football, binging football videos on YouTube, or playing football.</p>
-            </div>
+            <h2>More About Me</h2>
+            <p>I’ve had the opportunity to work on several regional and international projects including the mighty Daily Mail Group. I’m learning more and more by the day and I’m ready for any freelance work that comes my way. When I’m not designing, you can find me watching football, binging football videos on YouTube, or playing football.</p>
         </section>
         <section class="about-experience">
-            <div>
-                <h2 class="track">Track Record</h2>
+            <h2 class="track">Track Record</h2>
+            <div class="work-details">
                 <div class="work-item">
                     <p class="date">NOV 2019 - FEB 2021</p>
                     <h3>Kreative Clan - Digital Designer</h3>
@@ -93,7 +93,7 @@
     </main>
     <footer>
         <img src="" alt="">
-        <section class="footer-main wrapper">
+        <section class="footer-main container-fluid">
             <nav class="footer-nav">
                 <ul class="f-nav-list">
                     <li class="f-nav-item"><a href="index.html">HOME</a></li>

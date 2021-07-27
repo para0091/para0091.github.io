@@ -15,8 +15,8 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark nav-green sticky-top">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light nav-green sticky-top">
+            <div class="container-fluid">
                 <!-- Hamburger button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -42,21 +42,21 @@
         </nav>
     </header>
     <main>
-        <div class="container">
-            <div class="row">
+        <div class="container-fluid my-5">
+            <div class="row hero">
                 <div class="col-lg-7">
-                    <h1 class="mt-5">Hi!<br>
+                    <h1 class="">Hi!<br>
                     I'm Fuad Saneen.</h1>
                     <p>Interactive Media Design student @ Algonquin College.</p>
                 </div>
                 <div class="col-lg-5">
                     <picture>
-                        <img src="img/portrait.jpg" alt="fuad saneen portrait">
+                        <img src="img/portrait.jpg" alt="fuad saneen portrait" class="hero-img">
                     </picture>
                 </div>
             </div>
         </div>
-        <div class="container-fluid h-about text-center my-5">
+        <div class="container-fluid-fluid h-about text-center my-5">
             <div class="row mx-5">
                 <p>I'm Fuad, a graphic designer transitioning to product design.</p>
                 <p>
@@ -64,27 +64,28 @@
                 </p>
             </div>
         </div>
-        <div class="container selected-work">
+        <div class="container-fluid selected-work">
             <div class="row">
                 <h1 class="work-h1">Selected Work</h1>
+                <p class="text-center">FILTER BY CATEGORY</p>
             </div>
             <div class="row categories">
-                <div class="col-sm-4 col-md-2 text-end text-md-center my-3">
+                <div class="col-4 col-md-4 col-lg-2 text-center my-2">
                     <a href="" class="p-btn p-appdesign">App Design</a>
                 </div>
-                <div class="col-sm-4 col-md-2 text-center my-3">
+                <div class="col-4 col-md-4 col-lg-2 text-center my-2">
                     <a href="" class="p-btn p-illustration">Illustration</a>
                 </div>
-                <div class="col-sm-4 col-md-2 text-start text-md-center my-3">
+                <div class="col-4 col-md-4 col-lg-2 text-center my-2">
                     <a href="" class="p-btn p-webdesign">Web Design</a>
                 </div>
-                <div class="col-sm-4 col-md-2 text-end text-md-center my-3">
+                <div class="col-4 col-md-4 col-lg-2 text-center my-2">
                     <a href="" class="p-btn p-print">Print</a>
                 </div>
-                <div class="col-sm-4 col-md-2 text-center my-3">
+                <div class="col-4 col-md-4 col-lg-2 text-center my-2">
                     <a href="" class="p-btn p-smedia">Social Media</a>
                 </div>
-                <div class="col-sm-4 col-md-2 text-start text-md-center my-3">
+                <div class="col-4 col-md-4 col-lg-2 text-center my-2">
                     <a href="" class="p-btn p-branding">Branding</a>
                 </div>
             </div>
@@ -122,9 +123,9 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer class="container-fluid">
         <img src="" alt="">
-        <section class="footer-main wrapper">
+        <section class="footer-main">
             <nav class="footer-nav">
                 <ul class="f-nav-list">
                     <li class="f-nav-item"><a href="index.html">HOME</a></li>
@@ -134,14 +135,14 @@
                 </ul>
             </nav>
             <div class="f-socialmedia">
-                <a href="mailto:hi@fuadsaneen.com"><i class="fas fa-envelope-square"></i></i></a>
+                <a href="mailto:hi@fuadsaneen.com"><i class="fas fa-envelope-square"></i></a>
                 <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
                 <a href="https://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
                 <a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
                 <a href="https://www.dribbble.com"><i class="fab fa-dribbble-square"></i></a>
             </div>
         </section>
-        <p>&copy; Copyright 2021 - Fuad Saneen</p>
+        <p class="copyright">&copy; Copyright 2021 - Fuad Saneen</p>
     </footer>
     <script src="https://kit.fontawesome.com/776bb17f52.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
