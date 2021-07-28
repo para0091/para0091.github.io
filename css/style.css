@@ -1,11 +1,15 @@
+
+/*---------- Web Portfolio Styles ----------*/
+
 html {
     box-sizing: border-box;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
-
 
 .container {
     max-width: 1200px;
@@ -43,7 +47,7 @@ p {
     line-height: 1.5;
 }
 
-a, li {
+a {
     text-decoration: none;
 }
 
@@ -52,7 +56,7 @@ img {
     height: auto;
 }
 
-/* Home Page */
+/*---------- Home Page ----------*/
 
 .nav-green {
     background-color: #FDF6F0;
@@ -98,6 +102,11 @@ img {
     color: #FDF6F0;
     font-size: 0.75rem;
     text-transform: uppercase;
+    transition: 250ms linear;
+}
+
+.p-btn:hover {
+    color: #324235;
 }
 
 .p-appdesign {
@@ -136,13 +145,20 @@ img {
     margin: 2rem 0;
 }
 
-
-
-/* Footer */
+/*---------- Footer ----------*/
 
 footer {
     background-color: #324235;
     color: #FDF6F0;
+}
+
+.footer-img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.footer-main {
+    padding: 1rem;
 }
 
 footer a {
@@ -159,6 +175,10 @@ footer li {
     margin: 1rem;
 }
 
+.f-nav-list {
+    padding-left: 0;
+}
+
 .f-socialmedia {
     display: flex;
     justify-content: center;
@@ -172,21 +192,24 @@ footer li {
     font-size: 2rem;
 }
 
-.f-socialmedia .fab:hover, .fas:hover {
+.f-socialmedia .fab:hover,
+.fas:hover {
     color: #ffffff;
 }
 
 .copyright {
     text-align: center;
-    padding: 2rem;
+    padding: 0 2rem 3rem;
+    margin-bottom: 0;
 }
 
+/*---------- About Page ----------*/
 
-/* About Page */
-
-.about-details, .about-more, .about-experience {
+.about-details,
+.about-more,
+.about-experience {
     margin-top: 2rem;
-} 
+}
 
 .about-h1 {
     margin: 4rem 0 2rem;
@@ -227,7 +250,7 @@ footer li {
     margin-top: 1rem;
 }
 
-/* Contact Page */
+/*---------- Contact Page ----------*/
 
 .contact-h1 {
     margin: 4rem 0 2rem;
@@ -291,10 +314,11 @@ footer li {
 
 
 
-/* Tablet Styles */
+/*---------- Tablet Styles ----------*/
 
-@media screen and (min-width:720px) {
-    
+
+@media screen and (min-width:768px) {
+
     .container-fluid {
         padding: 2.5rem;
     }
@@ -308,17 +332,29 @@ footer li {
     .footer-main {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
+        padding: 2rem 0;
     }
 
     .f-nav-list {
         display: flex;
+        flex-wrap: wrap;
         margin-bottom: 0;
         padding-left: 0;
     }
 
-    .f-nav-item:nth-child(1) {
+    .f-nav-logo {
+        flex-basis: 100%;
+        display: flex;
         margin-left: 0;
+    }
+
+    .f-nav-item:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .f-socialmedia a:nth-child(5) {
+        margin-right: 0;
     }
 
     .copyright {
@@ -361,15 +397,26 @@ footer li {
         justify-content: center;
     }
 
-    .c-social-items div:nth-child(4), .c-social-items div:nth-child(5) {
+    .c-social-items div:nth-child(4),
+    .c-social-items div:nth-child(5) {
         flex-grow: 2;
         justify-content: center;
     }
-
 }
 
+
+/*---------- Desktop Styles ----------*/
+
+
 @media screen and (min-width:1080px) {
-    
+
+    /* Home Page */
+
+    .navbar {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
     .container-fluid {
         padding: 0 140px;
     }
@@ -388,8 +435,16 @@ footer li {
         margin: 0 auto;
     }
 
+    .footer-img {
+        width: 4rem;
+        height: 4rem;
+    }
+
     /* About Page */
 
+    .about-images img:nth-child(1) {
+        margin-top: 0;
+    }
 
     .about-h1 {
         margin: 0;
@@ -452,9 +507,7 @@ footer li {
         padding: 2rem 5rem;
     }
 
-
     /* Contact Page */
-
 
     .contact-desc {
         max-width: 600px;
@@ -480,11 +533,12 @@ footer li {
         text-align: left;
     }
 
-    .c-social-items div{
+    .c-social-items div {
         justify-content: flex-start;
     }
 
-    .c-social-items div:nth-child(4), .c-social-items div:nth-child(5) {
+    .c-social-items div:nth-child(4),
+    .c-social-items div:nth-child(5) {
         justify-content: flex-start;
     }
 }
