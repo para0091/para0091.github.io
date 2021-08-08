@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Prompt:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display" rel="stylesheet"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -22,7 +22,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a class="navbar-brand flex-grow-1" href="index.html">
-                    <img src="img/fuad-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-center">
+                    <img src="img/fuad-logo.svg" alt="FS Logo" width="30" height="24" class="d-inline-block align-text-center">
                 </a>
                 <!-- Collapses nav bar for mobile -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
@@ -48,18 +48,26 @@
         <div class="container-fluid my-5">
             <div class="row hero">
                 <div class="col-lg-7">
-                    <h1 class="">Hi!<br>
+                    <h1 class="slide-up">Hi!<br>
                     I'm Fuad Saneen.</h1>
-                    <p>Interactive Media Design student @ Algonquin College.</p>
+                    <p class="slow-slide-up">Interactive Media Design student @ Algonquin College.</p>
                 </div>
                 <div class="col-lg-5">
                     <picture>
-                        <img src="img/portrait.jpg" alt="fuad saneen portrait" class="hero-img">
-                    </picture>
+                        <source media="(max-width: 768px)"
+                                srcset="img/portrait-mobile.jpg 540w"
+                                sizes="100vw">
+                  
+                        <source media="(max-width: 990px)"
+                                srcset="img/portrait-tablet.jpg 768w"
+                                sizes="100vw">
+                  
+                        <img src="img/portrait.jpg" alt="Fuad Saneen portrait" class="hero-img">
+                      </picture>
                 </div>
             </div>
         </div>
-        <div class="container-fluid-fluid h-about text-center my-5">
+        <div class="container-fluid-fluid h-about text-center my-5 slow-slide-up">
             <div class="row mx-5">
                 <p>I'm Fuad, a graphic designer transitioning to product design.</p>
                 <p>
@@ -94,32 +102,32 @@
             </div>
             <div class="row projects">
                 <div class="spi project-item col-md-6">
-                    <img src="img/spi.jpg" alt="">
+                    <img src="img/spi.jpg" alt="SPI app banner">
                     <h2 class="project-h2">SPI Cinemas Mobile App Redesign</h2>
                     <a href="" class="p-btn p-appdesign p-item-btn">App Design</a>
                 </div>
                 <div class="posters project-item col-md-6">
-                    <img src="img/sm-cover.jpg" alt="">
+                    <img src="img/sm-cover.jpg" alt="Social Media banner">
                     <h2 class="project-h2">Social Media Posters</h2>
                     <a href="" class="p-btn p-smedia p-item-btn me-2">Social Media</a><a href="" class="p-btn p-illustration p-item-btn">Illustration</a>
                 </div>
                 <div class="logofolio project-item col-md-6">
-                    <img src="img/logofolio.jpg" alt="">
+                    <img src="img/logofolio.jpg" alt="Logofolio banner">
                     <h2 class="project-h2">Logofolio 2020</h2>
                     <a href="" class="p-btn p-branding p-item-btn">Branding</a>
                 </div>
                 <div class="dmg project-item col-md-6">
-                    <img src="img/brochure.jpg" alt="">
+                    <img src="img/brochure.jpg" alt="DMG Brochure banner">
                     <h2 class="project-h2">DMG Events</h2>
                     <a href="" class="p-btn p-print p-item-btn">Print</a>
                 </div>
                 <div class="kreative-clan project-item col-md-6">
-                    <img src="img/kc-cover.jpg" alt="">
+                    <img src="img/kc-cover.jpg" alt="Kreative Clan website">
                     <h2 class="project-h2">Kreative Clan Website Redesign</h2>
                     <a href="" class="p-btn p-webdesign p-item-btn">Web Design</a>
                 </div>
                 <div class="thai-resort project-item col-md-6">
-                    <img src="img/thai-resort.jpg" alt="">
+                    <img src="img/thai-resort.jpg" alt="Thai Resort Website">
                     <h2 class="project-h2">Thai Resort Website Redesign</h2>
                     <a href="" class="p-btn p-webdesign p-item-btn me-2">Web Design</a><a href="" class="p-btn p-branding p-item-btn">Branding</a>
                 </div>
@@ -130,7 +138,7 @@
         <section class="footer-main">
             <nav class="footer-nav">
                 <ul class="f-nav-list align-items-center">
-                    <li class="f-nav-item f-nav-logo"><a href="index.html"><img src="img/fuad-logo-white.svg" alt="" class="footer-img"></a></li>
+                    <li class="f-nav-item f-nav-logo"><a href="index.html"><img src="img/fuad-logo-white.svg" alt="FS Logo" class="footer-img"></a></li>
                     <li class="f-nav-item"><a href="index.html">HOME</a></li>
                     <li class="f-nav-item"><a href="about.html">ABOUT</a></li>
                     <li class="f-nav-item"><a href="contact.html">CONTACT</a></li>

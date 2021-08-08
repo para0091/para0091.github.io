@@ -1,4 +1,3 @@
-
 /*---------- Web Portfolio Styles ----------*/
 
 html {
@@ -11,13 +10,10 @@ html {
     box-sizing: border-box;
 }
 
+/* Changing the maximum width of container to 1200px */
+
 .container {
     max-width: 1200px;
-}
-
-.wrapper {
-    max-width: 1200px;
-    margin: 2rem auto;
 }
 
 body {
@@ -87,6 +83,40 @@ img {
     color: #324235;
 }
 
+/* Applying slide up animations to the hero text and image */
+
+.slide-up {
+    animation: slideUp 600ms ease-in-out;
+}
+
+.slow-slide-up {
+    animation: slideUp-hold 600ms ease-in-out;
+}
+
+.col-lg-5 {
+    animation: slideUp 600ms ease-in-out;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translate(0, 100px);
+        opacity: 0;
+    }
+    80% {
+        transform: translate(0,0);
+    }
+}
+
+@keyframes slideUp-hold {
+    0% {
+        transform: translate(0, 100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
 .selected-work .row p {
     margin-bottom: 0.5rem;
 }
@@ -95,6 +125,8 @@ img {
     max-width: 400px;
     margin: 0 auto;
 }
+
+/* Styling the product button */
 
 .p-btn {
     padding: 0.25rem 0.75rem;
@@ -192,10 +224,6 @@ footer li {
     font-size: 2rem;
 }
 
-.f-socialmedia .fab:hover,
-.fas:hover {
-    color: #ffffff;
-}
 
 .copyright {
     text-align: center;
@@ -213,6 +241,34 @@ footer li {
 
 .about-h1 {
     margin: 4rem 0 2rem;
+}
+
+.leftimg {
+    animation: leftSlideIn 600ms ease-in-out;
+}
+
+@keyframes leftSlideIn {
+    0% {
+        transform: translate(-100px, 0) skew(-20deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+.rightimg {
+    animation: rightSlideIn 600ms ease-in-out;
+}
+
+@keyframes rightSlideIn {
+    0% {
+        transform: translate(100px, 0) skew(20deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0,0);
+    }
 }
 
 .about-images img {
@@ -541,4 +597,9 @@ footer li {
     .c-social-items div:nth-child(5) {
         justify-content: flex-start;
     }
+
+    .c-social-link:hover {
+        color: #47644c;
+    }
+
 }

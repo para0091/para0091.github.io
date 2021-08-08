@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Prompt:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display" rel="stylesheet"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -22,22 +22,22 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a class="navbar-brand flex-grow-1" href="index.html">
-                    <img src="img/fuad-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-center">
+                    <img src="img/fuad-logo.svg" alt="FS Logo" width="30" height="24" class="d-inline-block align-text-center">
                 </a>
                 <!-- Collapses nav bar for mobile -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Resume</a>
+                            <a class="nav-link" aria-current="page" href="https://drive.google.com/file/d/1nnE2b3ZjgBfA-LqHMQSzuhFxfowxtLw2/view?usp=sharing" target="_blank">Resume</a>
                         </li>
                     </ul>
                 </div>
@@ -46,25 +46,25 @@
     </header>
     <main class="container-fluid">
         <section class="contact-desc">
-            <h1 class="contact-h1">Let's create something great together.</h1>
-            <p>
+            <h1 class="contact-h1 slide-up">Let's create something great together.</h1>
+            <p class="slow-slide-up">
                 I'm always interested in talking to other designers, developers, and product managers and marketers.
             </p>
-            <p>
+            <p class="slow-slide-up">
                 Feel free to contact me below, whether it's regarding a future project or simply to say hello!
             </p>
         </section>
-        <section class="forms">
+        <section class="forms slow-slide-up">
             <div class="contact-form">
                 <h2>Get in touch!</h2>
                 <form action="hello">
                     <div>
                         <label for="name">Name</label>
-                        <input type="name" id="name" placeholder="Your Name">
+                        <input type="text" id="name" placeholder="Your Name">
                     </div>
                     <div>
                         <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="yourmail@example.com">
+                        <input type="text" id="email" placeholder="yourmail@example.com">
                     </div>
                     <div>
                         <label for="message">Message</label>
@@ -77,23 +77,23 @@
                 <h3>If forms aren't your thing, <br> you can always contact me directly instead!</h3>
                 <div class="c-social-items">
                     <div class="c-social-link">
-                        <i class="fas fa-envelope-square"></i>
-                        <a href="mailto:hi@fuadsaneen.com"></i>hi@fuadsaneen.com</a>
+                        <a href="mailto:hi@fuadsaneen.com"><i class="fas fa-envelope-square"></i></a>
+                        <a href="mailto:hi@fuadsaneen.com">hi@fuadsaneen.com</a>
                     </div>
                     <div class="c-social-link">
-                        <i class="fab fa-facebook-square"></i>
+                        <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
                         <a href="https://www.facebook.com">fuad.saneen</a>
                     </div>
                     <div class="c-social-link">
-                        <i class="fab fa-instagram-square"></i>
+                        <a href="https://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
                         <a href="https://www.instagram.com">fuadpsaneen</a>
                     </div>
                     <div class="c-social-link">
-                        <i class="fab fa-twitter-square"></i>
+                        <a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
                         <a href="https://www.twitter.com">fuadpsaneen</a>
                     </div>
                     <div class="c-social-link">
-                        <i class="fab fa-dribbble-square"></i>
+                        <a href="https://www.dribbble.com"><i class="fab fa-dribbble-square"></i></a>
                         <a href="https://www.dribbble.com">fuadsaneen</a>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
         <section class="footer-main">
             <nav class="footer-nav">
                 <ul class="f-nav-list align-items-center">
-                    <li class="f-nav-item f-nav-logo"><a href="index.html"><img src="img/fuad-logo-white.svg" alt="" class="footer-img"></a></li>
+                    <li class="f-nav-item f-nav-logo"><a href="index.html"><img src="img/fuad-logo-white.svg" alt="FS Logo" class="footer-img"></a></li>
                     <li class="f-nav-item"><a href="index.html">HOME</a></li>
                     <li class="f-nav-item"><a href="about.html">ABOUT</a></li>
                     <li class="f-nav-item"><a href="contact.html">CONTACT</a></li>
