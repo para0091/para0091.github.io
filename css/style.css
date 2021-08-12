@@ -141,6 +141,8 @@ img {
     color: #324235;
 }
 
+/* Applying different background colors to different chips */
+
 .p-appdesign {
     background-color: #EFAEAE;
 }
@@ -211,6 +213,8 @@ footer li {
     padding-left: 0;
 }
 
+/* Using flex to show all the social icons in a line in the footer */
+
 .f-socialmedia {
     display: flex;
     justify-content: center;
@@ -243,6 +247,10 @@ footer li {
     margin: 4rem 0 2rem;
 }
 
+/* Applying animations to the images */
+
+/* Left image will come in from the left */
+
 .leftimg {
     animation: leftSlideIn 600ms ease-in-out;
 }
@@ -256,6 +264,8 @@ footer li {
         transform: translate(0,0);
     }
 }
+
+/* Right image will come in from the right */
 
 .rightimg {
     animation: rightSlideIn 600ms ease-in-out;
@@ -311,6 +321,8 @@ footer li {
 .contact-h1 {
     margin: 4rem 0 2rem;
 }
+
+/* Styling the contact form */
 
 .contact-form {
     margin: 4rem 0;
@@ -369,7 +381,6 @@ footer li {
 }
 
 
-
 /*---------- Tablet Styles ----------*/
 
 
@@ -384,6 +395,8 @@ footer li {
     footer {
         margin-top: 2rem;
     }
+
+    /* Using flex to stretch the footer to the width */
 
     .footer-main {
         display: flex;
@@ -420,6 +433,8 @@ footer li {
 
     /* About Page */
 
+    /* Keeping the images inline by using a 2 column grid */
+
     .about-images {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -440,8 +455,9 @@ footer li {
         padding: 2rem 0.9rem;
     }
 
-
     /* Contact Page */
+
+    /* Using flex to display them in order */
 
     .c-social-items {
         display: flex;
@@ -472,6 +488,8 @@ footer li {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
+
+    /* Applying horizontal padding the fluid container */
 
     .container-fluid {
         padding: 0 140px;
@@ -532,7 +550,6 @@ footer li {
         margin-right: auto;
     }
 
-
     .about-more {
         display: flex;
     }
@@ -568,6 +585,8 @@ footer li {
     .contact-desc {
         max-width: 600px;
     }
+
+    /* Placing the form items in a grid */
 
     .forms {
         display: grid;
