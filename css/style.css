@@ -179,6 +179,23 @@ img {
     margin: 2rem 0;
 }
 
+.projects img {
+    filter: grayscale(70%);
+}
+
+.projects img:hover {
+    animation: hoverimg 300ms linear both;
+}
+
+@keyframes hoverimg {
+    0% {
+        filter: grayscale(70%);
+    }
+    100% {
+        filter: grayscale(0%);
+    }
+}
+
 /*---------- Footer ----------*/
 
 footer {
