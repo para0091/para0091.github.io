@@ -64,6 +64,10 @@ img {
     color: #324235;
 }
 
+.navbar-brand img {
+    margin: 0 auto;
+}
+
 .hero {
     align-items: center;
 }
@@ -504,6 +508,10 @@ footer li {
     .navbar {
         padding-top: 1rem;
         padding-bottom: 1rem;
+    }
+
+    .navbar-brand img {
+        margin: 0;
     }
 
     /* Applying horizontal padding the fluid container */
